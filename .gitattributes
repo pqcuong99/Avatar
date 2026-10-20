@@ -1,0 +1,7 @@
+# Keep LF in the repository and in every working tree (including Windows with
+# core.autocrlf=true), so gofmt, Docker builds and CI all see the same bytes.
+* text=auto eol=lf
+
+# cmd.exe needs CRLF for batch files.
+*.bat text eol=crlf
+*.cmd text eol=crlf
