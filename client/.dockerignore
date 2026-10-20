@@ -1,0 +1,6 @@
+# Keep host-installed packages (possibly Windows binaries) and build output out of the image;
+# the image installs its own node_modules with `npm ci`.
+node_modules
+dist
+.env
+.env.*

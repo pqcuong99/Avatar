@@ -24,8 +24,8 @@ Một số đầu việc backend, security, QA thực hiện **song song** với
 
 ### Mốc đang ở đâu
 
-- **Có:** M0 *bộ khung repo* (starter), gồm client demo, Go health endpoints, compose local. Chưa xác minh chạy end-to-end trên máy cá nhân chủ dự án.
-- **Chưa:** M0 CI đầy đủ, M1–M8, Game Server online thực, transaction thật, schema migration thật, deploy VPS cũ.
+- **Có:** M0 *bộ khung repo* (starter), gồm client demo, Go health endpoints, compose local; toolchain còn hỗ trợ (Go 1.27, Node.js 24 LTS, Alpine 3.24), lockfile Client và CI GitHub Actions cơ bản (Go vet/test, build Client, build Docker image). Chưa xác minh chạy end-to-end trên máy cá nhân chủ dự án.
+- **Chưa:** lint riêng trong CI (ESLint, `gofmt`, golangci-lint), M1–M8, Game Server online thực, transaction thật, schema migration thật, deploy VPS cũ.
 - **Không được đánh đồng:** ‘thiết kế đã chốt’ ≠ ‘đã lập trình’ ≠ ‘đã QA’ ≠ ‘có thể Beta’.
 
 ## Backlog đầu tiên có thể đưa lên GitHub Issues

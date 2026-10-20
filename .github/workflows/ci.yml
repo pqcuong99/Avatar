@@ -1,0 +1,72 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  go:
+    name: Go (${{ matrix.module }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        module: [game-server, transaction-service]
+    defaults:
+      run:
+        working-directory: ${{ matrix.module }}
+    env:
+      # Fail instead of silently downloading another toolchain if go.mod outgrows CI.
+      GOTOOLCHAIN: local
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-go@v7
+        with:
+          # Keep in sync with go.mod/go.work and the golang image in the Dockerfiles.
+          go-version: '1.27.x'
+          check-latest: true
+          # No third-party modules (no go.sum) yet, so there is nothing to cache.
+          cache: false
+      - run: go version
+      - run: go vet ./...
+      - run: go test ./...
+
+  client:
+    name: Client (type-check + build)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: client
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          # Keep in sync with client/Dockerfile.local.
+          node-version: '24.x'
+          cache: npm
+          cache-dependency-path: client/package-lock.json
+      - run: npm ci --no-audit --no-fund
+      - run: npm run build
+
+  docker:
+    name: Docker images (build only)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - run: docker compose -f deploy/compose.local.yml build

@@ -18,6 +18,10 @@
 
 Client `Phaser + React + TypeScript`, Game Server `Go`, Transaction Service `Go`, PostgreSQL, Redis, WSS JSON+binary, bản đồ Tiled. Monorepo 1 Repository, code trên máy cá nhân → Git → deploy qua script đến môi trường **tương thích**.
 
+## Toolchain và CI
+
+Go **1.27**, Node.js **24 LTS**, image runtime Alpine **3.24** (đều còn được hỗ trợ tại 20/10/2026). Thư viện Client được khóa bằng `client/package-lock.json` (cài bằng `npm ci`). CI GitHub Actions tại `.github/workflows/ci.yml` chạy `go vet` + `go test` cho từng Go module, build Client và build Docker image trên mỗi push/PR vào `main`, không dùng secret. Chi tiết, cách nâng phiên bản và cách chạy không cần Docker: [docs/08_GIT_DEPLOYMENT.md](docs/08_GIT_DEPLOYMENT.md).
+
 ## Thư mục
 
 ```text
@@ -27,6 +31,7 @@ client/                # Phaser + React demo
  database/migrations/   # migration placeholder
  deploy/                # compose local + Windows local .bat + lưu ý VPS
  shared/                # giao thức/dữ liệu chung (placeholder)
+ .github/workflows/     # CI GitHub Actions
  docs/                  # GDD mới, quyết định, lộ trình, QA, archive
  master-data/           # CSV / JSON export cấu hình & backlog
 ```
@@ -40,7 +45,7 @@ client/                # Phaser + React demo
 # http://localhost:8082/healthz
 ```
 
-Dừng bằng `.\deploy\windows\stop-local.bat`. **Go readiness endpoint cố ý chưa OK**: chưa có WSS, DB auth, ledger hoặc gameplay nhiều người chơi. Xem chi tiết trong `docs/archive/STARTER_README_v0.1.md`.
+Dừng bằng `.\deploy\windows\stop-local.bat`. Máy không có Docker: cài Go 1.27+ và Node.js 24 rồi chạy trực tiếp theo [docs/08_GIT_DEPLOYMENT.md](docs/08_GIT_DEPLOYMENT.md) (đặt `GAME_SERVER_URL=http://localhost:8081` cho Client). **Go readiness endpoint cố ý chưa OK**: chưa có WSS, DB auth, ledger hoặc gameplay nhiều người chơi. Xem chi tiết trong `docs/archive/STARTER_README_v0.1.md`.
 
 ## Cảnh báo triển khai quan trọng
 
