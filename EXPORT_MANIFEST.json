@@ -1,0 +1,14 @@
+{
+  "project": "Project Thanh / Avatar",
+  "exported_at": "2026-10-20",
+  "repository": "https://github.com/pqcuong99/Avatar.git",
+  "decision_range": "P0-001..P0-183",
+  "decision_count": 183,
+  "legacy_source_end_question": 1198,
+  "legacy_transcript_complete": false,
+  "code_status": "starter_only",
+  "closed_beta": "open registration; reset all player data; preserve admin+config",
+  "open_beta": "no reset; 300 concurrent minimum load target; safety gates required",
+  "vps": "Windows Server 2012 R2 Datacenter 6.3.9600; WSL2 unsupported; no verified Go/Docker deployment",
+  "evidence": "User decisions and local markdown source files; no live GitHub read or push verified"
+}

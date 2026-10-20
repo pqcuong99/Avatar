@@ -1,0 +1,184 @@
+﻿id,group,choice,status,decision,evidence
+P0-001,Tài khoản & điều khiển,A,CONFIRMED,Web game cho máy tính và điện thoại,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-002,Tài khoản & điều khiển,B,CONFIRMED,Điện thoại chơi theo màn hình ngang,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-003,Tài khoản & điều khiển,C,CONFIRMED,Di chuyển mobile: joystick ảo và chạm điểm đến tự tìm đường,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-004,Tài khoản & điều khiển,C,CONFIRMED,Di chuyển PC: WASD/phím mũi tên và nhấp chuột tìm đường,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-005,Tài khoản & điều khiển,A,CONFIRMED,Điều khiển thủ công hủy di chuyển tự động,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-006,Tài khoản & điều khiển,A,CONFIRMED,Đăng nhập phiên mới sẽ ngắt phiên cũ của cùng tài khoản,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-007,Tài khoản & điều khiển,A,CONFIRMED,Mất kết nối tự nối lại và đồng bộ trạng thái,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-008,Tài khoản & điều khiển,A,CONFIRMED,Thời gian ân hạn mất kết nối là 30 giây,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-009,Tài khoản & điều khiển,A,CONFIRMED,"Trong 30 giây mất mạng nhân vật đứng yên vẫn hiển thị, không có icon mạng",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-010,Tài khoản & điều khiển,A,CONFIRMED,Sau hơn 30 giây khôi phục vị trí server lưu lần cuối,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-011,Tài khoản & điều khiển,A,CONFIRMED,Đăng ký bằng tên đăng nhập/mật khẩu; email xác minh khôi phục tùy chọn,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-012,Tài khoản & điều khiển,B,CONFIRMED,Không có email liên kết: yêu cầu Admin hỗ trợ sau chứng minh sở hữu,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-013,Tài khoản & điều khiển,B,CONFIRMED,Admin đánh giá chứng cứ sở hữu theo từng trường hợp,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-014,Tài khoản & điều khiển,A,CONFIRMED,Đặt lại mật khẩu bằng liên kết/mã một lần có hạn,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-015,Tài khoản & điều khiển,A,CONFIRMED,Đặt lại mật khẩu thu hồi các phiên đăng nhập cũ,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-016,Tài khoản & điều khiển,A,CONFIRMED,Mã khôi phục mật khẩu hết hạn sau 10 phút,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-017,Tài khoản & điều khiển,D,CONFIRMED,"Admin chọn kênh khôi phục được xác minh: email, Zalo/Discord hoặc ticket an toàn",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-018,Tài khoản & điều khiển,A,CONFIRMED,Một nhân vật trên một tài khoản,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-019,Tài khoản & điều khiển,A,CONFIRMED,Không xóa và tạo lại nhân vật,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-020,Tài khoản & điều khiển,A,CONFIRMED,Tên nhân vật duy nhất toàn hệ thống,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-021,Tài khoản & điều khiển,A,CONFIRMED,Tên nhân vật không phân biệt hoa thường,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-022,Tài khoản & điều khiển,B,CONFIRMED,Tên nhân vật phân biệt dấu tiếng Việt,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-023,Tài khoản & điều khiển,D,CONFIRMED,"Tên nhân vật dùng ký tự tiếng Việt, số, dấu cách và một số biểu tượng",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-024,Tài khoản & điều khiển,D,CONFIRMED,Biểu tượng cho phép: _ - . ★ ♥ ☆ ♡,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-025,Tài khoản & điều khiển,B,CONFIRMED,Độ dài tên nhân vật 3–16 grapheme hiển thị,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-026,Tài khoản & điều khiển,F,CONFIRMED,Đổi tên qua thẻ Đổi tên (theo đề xuất được chọn),Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-027,Tài khoản & điều khiển,D,CONFIRMED,"Nguồn Thẻ Đổi tên do Admin cấu hình: NPC, cửa hàng, sự kiện, thưởng",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-028,Tài khoản & điều khiển,A,CONFIRMED,Chỉ tiêu hao một Thẻ Đổi tên khi đổi tên thành công,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-029,Tài khoản & điều khiển,A,CONFIRMED,"Đổi tên không giới hạn số lần, không cooldown",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-030,Tiền tệ & nạp tiền,C,CONFIRMED,Người chơi khởi đầu với 5.000 Xu,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-031,Tiền tệ & nạp tiền,A,CONFIRMED,Người chơi khởi đầu với 0 Kim Cương,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-032,Tiền tệ & nạp tiền,D,CONFIRMED,"Kim Cương từ nạp, nhiệm vụ, sự kiện, thành tựu và phần thưởng",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-033,Tiền tệ & nạp tiền,D,CONFIRMED,Giới hạn Kim Cương do Admin cấu hình,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-034,Tiền tệ & nạp tiền,B,CONFIRMED,Kim Cương thưởng vượt giới hạn chuyển sang chờ nhận,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-035,Tiền tệ & nạp tiền,D,CONFIRMED,Giới hạn ví Xu ban đầu 999.999.999,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-036,Tiền tệ & nạp tiền,B,CONFIRMED,Kim Cương chờ nhận phải bấm nhận thủ công khi có chỗ,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-037,Tiền tệ & nạp tiền,C,CONFIRMED,"Kim Cương chờ nhận tách theo nguồn, có Nhận/Nhận tất cả",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-038,Tiền tệ & nạp tiền,A,CONFIRMED,Thứ tự nhận Kim Cương chờ: cũ trước,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-039,Tiền tệ & nạp tiền,A,CONFIRMED,Kim Cương chờ nhận không hết hạn,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-040,Tiền tệ & nạp tiền,D,CONFIRMED,"Tỷ giá/gói nạp Admin cấu hình sau bảo trì, bảo toàn đơn đã chốt",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-041,Tiền tệ & nạp tiền,B,CONFIRMED,1.000 VND = 1 Kim Cương theo tỷ giá gốc,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-042,Tiền tệ & nạp tiền,D,CONFIRMED,"Admin cấu hình gói nạp, kim cương gốc, thưởng và khuyến mãi",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-043,Tiền tệ & nạp tiền,D,CONFIRMED,Admin bật/tắt các phương thức thanh toán,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-044,Tiền tệ & nạp tiền,A,CONFIRMED,"Nạp QR chuyển khoản ngân hàng webhook tự cộng, chống ghi trùng",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-045,Tiền tệ & nạp tiền,A,CONFIRMED,Tiền sai nội dung/số tiền được chuyển Admin đối soát,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-046,Tiền tệ & nạp tiền,C,CONFIRMED,"Admin xử lý trường hợp sai theo từng tình huống: khớp đơn, bổ sung, hoàn tiền",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-047,Tiền tệ & nạp tiền,A,CONFIRMED,Mở bán đầu tiên chỉ hỗ trợ QR ngân hàng,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-048,Tiền tệ & nạp tiền,A,CONFIRMED,Mỗi đơn nạp có QR/mã đơn duy nhất,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-049,Tiền tệ & nạp tiền,C,CONFIRMED,Đơn chưa thanh toán hết hạn sau 15 phút,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-050,Tiền tệ & nạp tiền,B,CONFIRMED,Chuyển tiền đúng hạn nhưng webhook đến trễ vẫn hợp lệ; đến sau hết hạn Admin xử lý,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-051,Tiền tệ & nạp tiền,A,CONFIRMED,Đóng popup/đăng xuất không hủy đơn nạp đang có,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-052,Tiền tệ & nạp tiền,B,CONFIRMED,Có thể đồng thời tồn tại nhiều đơn nạp chưa thanh toán,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-053,Tiền tệ & nạp tiền,A,CONFIRMED,Hủy đơn chưa thanh toán không cần xác nhận lần hai,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-054,Tiền tệ & nạp tiền,B,CONFIRMED,Tiền đến trước lúc hủy vẫn cấp khi xác minh; đến sau hủy chuyển Admin,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-055,Tiền tệ & nạp tiền,C,CONFIRMED,Hoàn tiền/chargeback xử lý bởi Admin theo từng trường hợp,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-056,Tiền tệ & nạp tiền,B,CONFIRMED,Gói nạp 10k/20k/50k/100k/200k/500k VND với 10/20/50/100/200/500 KC gốc,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-057,Tiền tệ & nạp tiền,C,CONFIRMED,Thưởng thêm cho từng gói nạp do Admin cấu hình,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-058,Nông trại & túi chờ,A,CONFIRMED,"MVP có 5 cây, V1 mở thêm thành 10 cây",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-059,Nông trại & túi chờ,A,CONFIRMED,"MVP: cà rốt, khoai tây, cà chua, ngô, bắp cải; V1: dâu, bí ngô, dưa hấu, ớt, khoai lang",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-060,Nông trại & túi chờ,B,CONFIRMED,Giá hạt tham chiếu MVP lần lượt 100/250/500/750/1000 Xu; Admin có thể chốt trước mở,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-061,Nông trại & túi chờ,C,CONFIRMED,Thời gian lớn MVP lần lượt 30/60/120/180/240 phút,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-062,Nông trại & túi chờ,CUSTOM,CONFIRMED,"Sản lượng thu hoạch và giá bán từng cây do Admin cấu hình trước khi ra mắt, đổi sau bảo trì",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-063,Nông trại & túi chờ,A,CONFIRMED,"Sản lượng cơ bản cố định theo cấu hình, trừ cơ chế sâu bệnh",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-064,Nông trại & túi chờ,A,CONFIRMED,Sản lượng cơ bản snapshot tại thời điểm trồng,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-065,Nông trại & túi chờ,A,CONFIRMED,Thời gian sinh trưởng snapshot tại thời điểm trồng,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-066,Nông trại & túi chờ,B,CONFIRMED,"Bán nông sản NPC dùng giá mới nhất có hiệu lực sau bảo trì, không đảo giao dịch cũ",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-067,Nông trại & túi chờ,A,CONFIRMED,Mỗi cây chỉ thu hoạch một lần rồi biến mất,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-068,Nông trại & túi chờ,B,CONFIRMED,Ban đầu người chơi có 6 ô đất,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-069,Nông trại & túi chờ,D,CONFIRMED,"Admin cấu hình cách mở rộng đất, chi phí và giới hạn",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-070,Nông trại & túi chờ,A,CONFIRMED,Mỗi lần mở rộng đất thêm 1 ô,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-071,Nông trại & túi chờ,A,CONFIRMED,Mở đất theo thứ tự ID ô tăng dần,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-072,Nông trại & túi chờ,A,CONFIRMED,"Cây trưởng thành không héo, chờ thu hoạch hoặc nhổ",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-073,Nông trại & túi chờ,A,CONFIRMED,"Nhổ cây chưa chín sẽ mất cây/hạt, không hoàn lại Xu hay nông sản",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-074,Nông trại & túi chờ,A,CONFIRMED,Nhổ cây trưởng thành cũng bỏ toàn bộ sản phẩm,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-075,Nông trại & túi chờ,A,CONFIRMED,Thu hoạch khi túi đầy: nông sản vào hàng chờ nhận,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-076,Nông trại & túi chờ,A,CONFIRMED,Một lần thu hoạch không đủ chỗ chứa toàn bộ sản lượng: chuyển toàn bộ lô vào chờ,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-077,Nông trại & túi chờ,A,CONFIRMED,"Hàng chờ phải nhận thủ công, không tự đưa vào túi",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-078,Nông trại & túi chờ,A,CONFIRMED,Mặc định nhận nguyên cả dòng nông sản đang chờ,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-079,Nông trại & túi chờ,A,CONFIRMED,"Nhận tất cả theo FIFO, dừng ở dòng không chứa đủ",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-080,Nông trại & túi chờ,A,CONFIRMED,"Không bán NPC trực tiếp từ hàng chờ, phải nhận vào túi",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-081,Nông trại & túi chờ,C,CONFIRMED,Gộp các lô chờ cùng loại nông sản thành một dòng,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-082,Nông trại & túi chờ,A,CONFIRMED,Dòng gộp chờ giữ thời điểm tạo sớm nhất,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-083,Nông trại & túi chờ,B,CONFIRMED,Ngoại lệ nhận một phần nếu dòng gộp lớn hơn dung lượng túi tối đa có thể có,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-084,Nông trại & túi chờ,A,CONFIRMED,Ngoại lệ tự nhận tối đa số có thể chứa,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-085,Nông trại & túi chờ,A,CONFIRMED,Nhận tất cả gặp ngoại lệ: nhận tối đa rồi dừng,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-086,Nông trại & túi chờ,A,CONFIRMED,Mọi lần nhổ cây phải xác nhận,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-087,Nông trại & túi chờ,B,CONFIRMED,Thu hoạch tất cả chỉ thu cây đã trưởng thành,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-088,Nông trại & túi chờ,A,CONFIRMED,Thu hoạch tất cả xử lý ô tăng dần; lô nào túi không đủ chuyển chờ và tiếp tục,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-089,Nông trại & túi chờ,B,CONFIRMED,Trồng tất cả dùng một loại hạt vào ô trống theo ID tăng dần đến hết hạt,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-090,Nông trại & túi chờ,A,CONFIRMED,Trồng tất cả bắt buộc xác nhận loại và số hạt,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-091,Nông trại & túi chờ,A,CONFIRMED,Trồng từng ô không cần xác nhận,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-092,Nông trại & túi chờ,A,CONFIRMED,Thu hoạch tất cả không cần xác nhận,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-093,Nông trại & túi chờ,B,CONFIRMED,Nhổ tất cả gồm cây non/chín và bắt buộc xác nhận,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-094,Nông trại & túi chờ,A,CONFIRMED,Không có cơ chế tưới nước,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-095,Nông trại & túi chờ,A,CONFIRMED,Không có cơ chế phân bón,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-096,Sâu bệnh & chim,D,CONFIRMED,Sâu bệnh không xử lý kịp gây giảm sản lượng 5–10%,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-097,Sâu bệnh & chim,CUSTOM,CONFIRMED,Mỗi cây có thể phát sinh sâu 1 lần trong thời gian lớn; thời hạn bắt sâu bằng 30% thời gian cây lớn từ lúc sâu xuất hiện,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-098,Sâu bệnh & chim,A,CONFIRMED,Sâu chỉ phát sinh trong 70% đầu thời gian sinh trưởng,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-099,Sâu bệnh & chim,C,CONFIRMED,Xác suất sâu riêng theo loại cây do Admin cấu hình sau bảo trì,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-100,Sâu bệnh & chim,A,CONFIRMED,"Mức phạt sâu là tỷ lệ nguyên ngẫu nhiên 5,6,7,8,9 hoặc 10 phần trăm",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-101,Sâu bệnh & chim,A,CONFIRMED,Sản lượng bị trừ = floor(sản lượng cơ bản × tỷ lệ phần trăm / 100),Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-102,Sâu bệnh & chim,A,CONFIRMED,Nếu làm tròn xuống 0 thì không trừ nông sản,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-103,Sâu bệnh & chim,CUSTOM,CONFIRMED,Bắt sâu thủ công miễn phí; sâu làm thức ăn chim; chim non nuôi 12h và ăn sâu; chim lớn tự bắt sâu; tuổi thọ 30 ngày,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-104,Sâu bệnh & chim,D,CONFIRMED,"Sâu bắt thủ công là vật phẩm trong túi, stack 999, có thể chuyển sang kho thức ăn",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-105,Sâu bệnh & chim,E,CONFIRMED,Tổng số sâu nuôi mỗi chim non do Admin cấu hình,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-106,Sâu bệnh & chim,B,CONFIRMED,Cho chim non ăn nhiều lần; tính 12h từ lúc mua; thành chim lớn sau đủ 12h và đủ sâu,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-107,Sâu bệnh & chim,B,CONFIRMED,"Tuổi thọ chim lớn tính từ khi trưởng thành, chim non không hết tuổi",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-108,Sâu bệnh & chim,A,CONFIRMED,"Chim lớn sống 720 giờ theo thời gian Server, tính cả khi Offline",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-109,Sâu bệnh & chim,E,CONFIRMED,Số lượng chim tối đa mỗi người do Admin cấu hình,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-110,Sâu bệnh & chim,A,CONFIRMED,Hạn mức chim tính cả chim non và chim lớn,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-111,Sâu bệnh & chim,A,CONFIRMED,"Hạ hạn mức chim: chim đang có vẫn hoạt động, cấm mua thêm khi vượt trần",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-112,Sâu bệnh & chim,A,CONFIRMED,Chim lớn bắt sâu kể cả khi chủ Offline,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-113,Sâu bệnh & chim,B,CONFIRMED,"Mỗi chim lớn bắt tối đa 4 sâu trong cửa sổ 60 phút trượt, không chờ 15 phút cố định",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-114,Sâu bệnh & chim,B,CONFIRMED,Chim ưu tiên sâu có hạn xử lý gần nhất,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-115,Sâu bệnh & chim,A,CONFIRMED,"Nếu cùng hạn xử lý, ưu tiên ô đất có ID nhỏ hơn",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-116,Sâu bệnh & chim,A,CONFIRMED,"Chim lớn ăn sâu tự bắt ngay, không sinh ra sâu trong túi/kho",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-117,Sâu bệnh & chim,A,CONFIRMED,Chim lớn không chết đói nếu vắng sâu,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-118,Sâu bệnh & chim,CUSTOM,CONFIRMED,"Bán chim lớn cho NPC nông trại lấy Xu, giá Admin cấu hình, giải phóng vị trí",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-119,Sâu bệnh & chim,C,CONFIRMED,Cho phép bán chim non cho NPC với giá riêng do Admin cấu hình,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-120,Sâu bệnh & chim,A,CONFIRMED,"Bán chim luôn xác nhận tuổi, giá và hành động",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-121,Sâu bệnh & chim,A,CONFIRMED,Giá bán chim lớn cố định không phụ thuộc tuổi còn lại,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-122,Sâu bệnh & chim,A,CONFIRMED,Giá bán chim non cố định không phụ thuộc số sâu/giờ đã nuôi,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-123,Sâu bệnh & chim,C,CONFIRMED,"Cho chim non ăn lấy sâu từ túi trước, kho thức ăn sau, cùng một lần",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-124,Sâu bệnh & chim,A,CONFIRMED,Nút cho ăn từng chim tự dùng tối đa số sâu hiện có đến khi đủ khẩu phần,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-125,Sâu bệnh & chim,B,CONFIRMED,"Cho ăn tất cả theo FIFO thời điểm mua chim, ưu tiên nuôi đủ chim đầu tiên",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-126,Sâu bệnh & chim,A,CONFIRMED,Cho ăn tất cả cần xác nhận tổng chim và sâu dự kiến dùng,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-127,Sâu bệnh & chim,A,CONFIRMED,Cho ăn một chim không cần xác nhận,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-128,Sâu bệnh & chim,A,CONFIRMED,Sức chứa kho thức ăn do Admin cấu hình,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-129,Sâu bệnh & chim,A,CONFIRMED,"Hạ sức chứa kho: giữ số sâu cũ vượt trần, chỉ ngừng nạp thêm đến khi còn chỗ",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-130,Sâu bệnh & chim,A,CONFIRMED,"Cho phép chuyển sâu hai chiều túi ↔ kho; giao dịch nguyên tử, không mất/nhân đôi",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-131,Sâu bệnh & chim,C,CONFIRMED,Chọn lượng sâu: nút 1/10/100/Tối đa và ô nhập thủ công,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-132,Sâu bệnh & chim,A,CONFIRMED,"Nếu vượt số có hoặc sức chứa: từ chối toàn bộ giao dịch, không tự giảm số lượng",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-133,Sâu bệnh & chim,A,CONFIRMED,"Chuyển sâu ngay sau nhấn Chuyển và xác thực, không cần xác nhận lần hai",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-134,Bản đồ & di chuyển,A,CONFIRMED,"Bản đồ công cộng tự chia phòng, Admin cấu hình số người tối đa/phòng",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-135,Bản đồ & di chuyển,A,CONFIRMED,Có nút Đến cùng phòng bạn bè; nếu phòng đầy thì từ chối,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-136,Bản đồ & di chuyển,A,CONFIRMED,Mất mạng giữ suất và vị trí phòng cũ trong 30 giây; quá hạn giải phóng,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-137,Bản đồ & di chuyển,A,CONFIRMED,Client prediction + Server-authoritative và nội suy chuyển động người chơi khác,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-138,Bản đồ & di chuyển,A,CONFIRMED,"Server từ chối di chuyển gian lận, log và chuyển dấu hiệu lặp cho Admin; không tự cấm",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-139,Dữ liệu & an toàn tài sản,A,CONFIRMED,Backup Database hàng ngày + PITR; giữ bản sao ngoài Server chính; diễn tập khôi phục,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-140,Dữ liệu & an toàn tài sản,A,CONFIRMED,"Sau khôi phục: tự đối soát nạp tiền hợp lệ, không bỏ sót/cấp trùng; ngoại lệ Admin",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-141,Dữ liệu & an toàn tài sản,A,CONFIRMED,"Sổ cái bất biến cho mọi thay đổi Xu/Kim Cương/vật phẩm quan trọng; transaction id, nguyên tử",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-142,Dữ liệu & an toàn tài sản,A,CONFIRMED,"RBAC: Super Admin, Game Admin, Hỗ trợ, Tài chính với quyền chi tiết",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-143,Dữ liệu & an toàn tài sản,A,CONFIRMED,Tất cả tài khoản Admin bắt buộc TOTP 2FA và mã khôi phục,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-144,Dữ liệu & an toàn tài sản,A,CONFIRMED,Điều chỉnh tài sản thủ công bởi Admin phải có người đề xuất và người phê duyệt khác,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-145,Dữ liệu & an toàn tài sản,A,CONFIRMED,"Chống dò mật khẩu nhiều lớp: rate limit tài khoản/IP/thiết bị, trì hoãn, CAPTCHA nghi vấn, log",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-146,Dữ liệu & an toàn tài sản,A,CONFIRMED,2FA TOTP tùy chọn cho người chơi; có mã khôi phục,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-147,Dữ liệu & an toàn tài sản,A,CONFIRMED,"Game Server mở rộng ngang, tự phân tải và có thể tự thêm năng lực xử lý",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-148,Dữ liệu & an toàn tài sản,A,CONFIRMED,"Game Server lỗi: cô lập, tự mở phòng thay thế, client nối lại, đối soát trạng thái",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-149,Dữ liệu & an toàn tài sản,A,CONFIRMED,"PostgreSQL có Database dự phòng và failover an toàn, không split-brain",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-150,Dữ liệu & an toàn tài sản,A,CONFIRMED,Database mất đồng bộ bắt buộc: tạm dừng thay đổi tài sản thay vì chấp nhận mất giao dịch,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-151,Bảo mật hạ tầng & bảo trì,A,CONFIRMED,"Chống DDoS nhiều lớp: provider/WAF, Gateway, hạn mức từng hành động, giám sát",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-152,Bảo mật hạ tầng & bảo trì,A,CONFIRMED,Cập nhật qua thử nghiệm → thông báo bảo trì → đóng giao dịch → backup → triển khai → QA → mở lại,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-153,MVP & beta,B,CONFIRMED,"Phát triển MVP cốt lõi trước, hệ thống khác theo phiên bản",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-154,MVP & beta,B,CONFIRMED,MVP không mở nạp Kim Cương tiền thật; nạp QR để sau khi ổn định,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-155,MVP & beta,B,CONFIRMED,"MVP có chat công cộng, tìm/kết bạn, danh sách bạn bè và chat riêng",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-156,MVP & beta,B,CONFIRMED,"MVP có nông trại và sâu bệnh thủ công, chưa triển khai chim",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-157,MVP & beta,A,CONFIRMED,MVP chưa có chợ giữa người chơi,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-158,MVP & beta,B,CONFIRMED,"MVP có cửa hàng thời trang NPC, mặc/tháo đồ và đồng bộ ngoại hình",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-159,MVP & beta,B,CONFIRMED,MVP có nhiệm vụ cá nhân hằng ngày cơ bản,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-160,MVP & beta,D,CONFIRMED,"Closed Beta môi trường riêng có reset, sau đó Open Beta trên chính thức không reset",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-161,MVP & beta,A,CONFIRMED,"Chỉ mở Open Beta khi chức năng, dữ liệu, bảo mật, backup, khả năng khôi phục và tải đạt chuẩn",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-162,MVP & beta,A,CONFIRMED,Kiểm thử tối thiểu 300 người Online đồng thời trước Open Beta,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-163,Kỹ thuật & kiến trúc,A,CONFIRMED,Phát triển theo giai đoạn có tích hợp và kiểm thử liên tục,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-164,Kỹ thuật & kiến trúc,B,CONFIRMED,Client Phaser+React+TS; Game Server Go; PostgreSQL+Redis,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-165,Kỹ thuật & kiến trúc,A,CONFIRMED,Dịch vụ giao dịch tập trung chịu trách nhiệm mọi thay đổi tài sản; có thể scale theo phiên bản,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-166,Kỹ thuật & kiến trúc,C,CONFIRMED,"WebSocket/WSS hỗn hợp: JSON cho sự kiện ít thường xuyên, nhị phân cho vị trí/chuyển động",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-167,Kỹ thuật & kiến trúc,A,CONFIRMED,Bản đồ dùng Tiled Map Editor JSON cho Phaser và Server Go xác thực va chạm,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-168,Kỹ thuật & kiến trúc,A,CONFIRMED,"Client tìm đường theo bản đồ, Game Server kiểm tra tốc độ/va chạm từng bước",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-169,Kỹ thuật & kiến trúc,A,CONFIRMED,Thời gian Server và mốc lưu Database; Offline hoặc bảo trì không dừng tiến trình,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-170,VPS & vận hành beta,B,CONFIRMED,"VPS tự quản lý, ban đầu chỉ có một VPS",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-171,VPS & vận hành beta,CUSTOM,CONFIRMED,"Chủ dự án viết code trên máy cá nhân, push Git; VPS clone/pull và chạy",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-172,VPS & vận hành beta,A,CONFIRMED,Chọn Docker Compose và mong muốn triển khai tự động qua một file .bat; chưa khả thi với VPS cũ,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-173,VPS & vận hành beta,D,CONFIRMED,VPS chạy Windows Server (sau đó xác minh là Windows Server 2012 R2),Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-174,VPS & vận hành beta,A,SUPERSEDED,Đã từng chọn giữ Windows Server + WSL2/Ubuntu/Docker; không tương thích VPS Windows Server 2012 R2 nên bị điều chỉnh,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-175,VPS & vận hành beta,OBSERVED,CONFIRMED,Kiểm tra thực tế xác nhận Windows Server 2012 R2 Datacenter 6.3.9600 build 9600,Ảnh PowerShell từ người dùng
+P0-176,VPS & vận hành beta,CUSTOM,CONFIRMED,Giữ VPS Windows Server 2012 R2 cho Closed Beta tạm thời; sau hoàn thiện chuyển hạ tầng,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-177,VPS & vận hành beta,A,CONFIRMED,"Closed Beta chỉ để thử, có reset; đã điều chỉnh chính sách đăng ký thành tự do",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-178,VPS & vận hành beta,CUSTOM,CONFIRMED,"Closed Beta đăng ký tài khoản bình thường, không dùng mã mời/whitelist/admin duyệt",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-179,VPS & vận hành beta,A,CONFIRMED,Reset Closed Beta xóa toàn bộ tài khoản/dữ liệu người chơi; giữ Admin và cấu hình Server,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-180,Monorepo & Git,A,CONFIRMED,"Chọn Monorepo, toàn bộ Client, Go, Database, deploy, docs cùng một Git Repo",Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-181,Monorepo & Git,A,CONFIRMED,Dịch vụ giao dịch và Game Server cốt lõi đều dùng Go,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-182,Monorepo & Git,A,CONFIRMED,Repository được cung cấp: https://github.com/pqcuong99/Avatar.git,Dòng hội thoại P0 của dự án; xác nhận người dùng
+P0-183,Monorepo & Git,A,CONFIRMED,"Repository mới tạo, chưa có mã nguồn; có thể đưa starter vào",Dòng hội thoại P0 của dự án; xác nhận người dùng

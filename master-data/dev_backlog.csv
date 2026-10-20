@@ -1,0 +1,23 @@
+﻿issue_id,milestone,priority,title,definition_of_done,rule_refs
+TH-DEV-001,M0,P0,Tạo Git repo và commit starter + tài liệu,"Có commit, gitignore, README; không secret","P0-180,182,183"
+TH-DEV-002,M0,P0,Chạy local Go và Client; xác thực toolchain còn hỗ trợ,"Go test pass, Client build, health endpoints; mô tả setup tái lập","P0-164,181"
+TH-DEV-003,M0,P1,Thiết lập GitHub Actions CI,"CI chạy Go tests và TS build/lint (nếu có), không dùng secret",P0-163
+TH-DEV-004,M1,P0,Database migrations cho account/characters/session,"Migration up/down trên DB test, unique constraint phù hợp",P0-011–025
+TH-DEV-005,M1,P0,"API đăng ký, login, phiên đơn, password hash",Integration test single-session và brute force limit,"P0-006,011,145"
+TH-DEV-006,M1,P0,Tạo nhân vật/đổi tên Unicode,"3–16 grapheme, unique case-insensitive, accent-sensitive",P0-018–029
+TH-DEV-007,M2,P0,Map Tiled JSON và collision dữ liệu chung,"Client render cùng map version, server collision test",P0-167–168
+TH-DEV-008,M2,P0,"WSS, phòng tự phân tải, reconnect 30s","Hai Client nhìn thấy nhau, auto room, grace/rejoin","P0-134–137,166"
+TH-DEV-009,M2,P0,Server authoritative movement và pathfinding,"Reject teleport/through-wall, reconcile đúng","P0-137–138,168"
+TH-DEV-010,M3,P0,"Ledger, idempotency, transaction service Go","100 concurrent retries = 1 lần cập nhật, audit","P0-141,150,165"
+TH-DEV-011,M3,P0,Inventory/stack/pending claims,999/slot; ngăn mất pending; FIFO merge exception,P0-075–085
+TH-DEV-012,M4,P0,"Farm 5 cây, snapshot growth & yield","Offline/time maintenance đúng, thu/nhổ hàng loạt","P0-058–095,169"
+TH-DEV-013,M4,P0,Sâu bệnh có sự kiện bền vững,"Pest spawn once, 70%/30% deadline, floor 5–10%",P0-096–102
+TH-DEV-014,M4,P0,NPC shop và giá version theo bảo trì,Atomic buy/sell; giá mới chỉ sau bảo trì,"P0-066,152"
+TH-DEV-015,M5,P0,"Public chat, friends, private messages","Gửi tin/bạn bè, retention, block privacy","P0-155, GDD TH-05–07"
+TH-DEV-016,M6,P1,Fashion NPC + equipment sync,"Mua, mặc/tháo, đồng bộ người cùng phòng",P0-158
+TH-DEV-017,M6,P1,Daily quests cơ bản,Progress per-day; chống cấp thưởng trùng,P0-159
+TH-DEV-018,M6,P0,Admin RBAC/2FA và hai admin approve,"Không tự duyệt, audit đầy đủ",P0-142–144
+TH-DEV-019,M7,P0,Đánh giá runtime VPS 2012 R2 hoặc chuyển môi trường thử nghiệm,Không mở beta khi OS/runtime không được hỗ trợ an toàn,P0-173–179
+TH-DEV-020,M7,P0,"Closed Beta reset, giữ admin/config","Test reset trên staging, backup, dữ liệu người chơi = 0","P0-160,177–179"
+TH-DEV-021,M8,P0,Offsite PITR + PostgreSQL HA / failover,"Restore test, no split brain, P0-150 durability","P0-139,149,150"
+TH-DEV-022,M8,P0,Game Server failover và test 300 CCU,Báo cáo test 300 active users; phục hồi khi crash,"P0-148,161,162"

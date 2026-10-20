@@ -1,0 +1,59 @@
+# LOCAL DEVELOPMENT ONLY. Do not publish this Compose file directly on the internet.
+services:
+  web:
+    build:
+      context: ../client
+      dockerfile: Dockerfile.local
+    ports:
+      - '127.0.0.1:5173:5173'
+    depends_on:
+      - game-server
+    restart: unless-stopped
+
+  game-server:
+    build:
+      context: ../game-server
+    environment:
+      GAME_SERVER_ADDR: ':8081'
+    ports:
+      - '127.0.0.1:8081:8081'
+    restart: unless-stopped
+
+  transaction-service:
+    build:
+      context: ../transaction-service
+    environment:
+      TRANSACTION_SERVICE_ADDR: ':8082'
+    ports:
+      - '127.0.0.1:8082:8082'
+    restart: unless-stopped
+
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: thanh_dev
+      POSTGRES_PASSWORD: DEV_ONLY_change_me_before_any_public_deployment
+      POSTGRES_DB: thanh_dev
+    ports:
+      - '127.0.0.1:5432:5432'
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U thanh_dev -d thanh_dev']
+      interval: 10s
+      timeout: 5s
+      retries: 6
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    command: ['redis-server', '--appendonly', 'yes']
+    ports:
+      - '127.0.0.1:6379:6379'
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+  redis_data:

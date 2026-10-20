@@ -1,0 +1,1466 @@
+[
+  {
+    "id": "P0-001",
+    "choice": "A",
+    "decision": "Web game cho máy tính và điện thoại",
+    "group": "Tài khoản & điều khiển",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-002",
+    "choice": "B",
+    "decision": "Điện thoại chơi theo màn hình ngang",
+    "group": "Tài khoản & điều khiển",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-003",
+    "choice": "C",
+    "decision": "Di chuyển mobile: joystick ảo và chạm điểm đến tự tìm đường",
+    "group": "Tài khoản & điều khiển",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-004",
+    "choice": "C",
+    "decision": "Di chuyển PC: WASD/phím mũi tên và nhấp chuột tìm đường",
+    "group": "Tài khoản & điều khiển",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-005",
+    "choice": "A",
+    "decision": "Điều khiển thủ công hủy di chuyển tự động",
+    "group": "Tài khoản & điều khiển",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-006",
+    "choice": "A",
+    "decision": "Đăng nhập phiên mới sẽ ngắt phiên cũ của cùng tài khoản",
+    "group": "Tài khoản & điều khiển",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-007",
+    "choice": "A",
+    "decision": "Mất kết nối tự nối lại và đồng bộ trạng thái",
+    "group": "Tài khoản & điều khiển",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-008",
+    "choice": "A",
+    "decision": "Thời gian ân hạn mất kết nối là 30 giây",
+    "group": "Tài khoản & điều khiển",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-009",
+    "choice": "A",
+    "decision": "Trong 30 giây mất mạng nhân vật đứng yên vẫn hiển thị, không có icon mạng",
+    "group": "Tài khoản & điều khiển",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-010",
+    "choice": "A",
+    "decision": "Sau hơn 30 giây khôi phục vị trí server lưu lần cuối",
+    "group": "Tài khoản & điều khiển",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-011",
+    "choice": "A",
+    "decision": "Đăng ký bằng tên đăng nhập/mật khẩu; email xác minh khôi phục tùy chọn",
+    "group": "Tài khoản & điều khiển",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-012",
+    "choice": "B",
+    "decision": "Không có email liên kết: yêu cầu Admin hỗ trợ sau chứng minh sở hữu",
+    "group": "Tài khoản & điều khiển",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-013",
+    "choice": "B",
+    "decision": "Admin đánh giá chứng cứ sở hữu theo từng trường hợp",
+    "group": "Tài khoản & điều khiển",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-014",
+    "choice": "A",
+    "decision": "Đặt lại mật khẩu bằng liên kết/mã một lần có hạn",
+    "group": "Tài khoản & điều khiển",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-015",
+    "choice": "A",
+    "decision": "Đặt lại mật khẩu thu hồi các phiên đăng nhập cũ",
+    "group": "Tài khoản & điều khiển",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-016",
+    "choice": "A",
+    "decision": "Mã khôi phục mật khẩu hết hạn sau 10 phút",
+    "group": "Tài khoản & điều khiển",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-017",
+    "choice": "D",
+    "decision": "Admin chọn kênh khôi phục được xác minh: email, Zalo/Discord hoặc ticket an toàn",
+    "group": "Tài khoản & điều khiển",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-018",
+    "choice": "A",
+    "decision": "Một nhân vật trên một tài khoản",
+    "group": "Tài khoản & điều khiển",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-019",
+    "choice": "A",
+    "decision": "Không xóa và tạo lại nhân vật",
+    "group": "Tài khoản & điều khiển",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-020",
+    "choice": "A",
+    "decision": "Tên nhân vật duy nhất toàn hệ thống",
+    "group": "Tài khoản & điều khiển",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-021",
+    "choice": "A",
+    "decision": "Tên nhân vật không phân biệt hoa thường",
+    "group": "Tài khoản & điều khiển",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-022",
+    "choice": "B",
+    "decision": "Tên nhân vật phân biệt dấu tiếng Việt",
+    "group": "Tài khoản & điều khiển",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-023",
+    "choice": "D",
+    "decision": "Tên nhân vật dùng ký tự tiếng Việt, số, dấu cách và một số biểu tượng",
+    "group": "Tài khoản & điều khiển",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-024",
+    "choice": "D",
+    "decision": "Biểu tượng cho phép: _ - . ★ ♥ ☆ ♡",
+    "group": "Tài khoản & điều khiển",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-025",
+    "choice": "B",
+    "decision": "Độ dài tên nhân vật 3–16 grapheme hiển thị",
+    "group": "Tài khoản & điều khiển",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-026",
+    "choice": "F",
+    "decision": "Đổi tên qua thẻ Đổi tên (theo đề xuất được chọn)",
+    "group": "Tài khoản & điều khiển",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-027",
+    "choice": "D",
+    "decision": "Nguồn Thẻ Đổi tên do Admin cấu hình: NPC, cửa hàng, sự kiện, thưởng",
+    "group": "Tài khoản & điều khiển",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-028",
+    "choice": "A",
+    "decision": "Chỉ tiêu hao một Thẻ Đổi tên khi đổi tên thành công",
+    "group": "Tài khoản & điều khiển",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-029",
+    "choice": "A",
+    "decision": "Đổi tên không giới hạn số lần, không cooldown",
+    "group": "Tài khoản & điều khiển",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-030",
+    "choice": "C",
+    "decision": "Người chơi khởi đầu với 5.000 Xu",
+    "group": "Tiền tệ & nạp tiền",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-031",
+    "choice": "A",
+    "decision": "Người chơi khởi đầu với 0 Kim Cương",
+    "group": "Tiền tệ & nạp tiền",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-032",
+    "choice": "D",
+    "decision": "Kim Cương từ nạp, nhiệm vụ, sự kiện, thành tựu và phần thưởng",
+    "group": "Tiền tệ & nạp tiền",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-033",
+    "choice": "D",
+    "decision": "Giới hạn Kim Cương do Admin cấu hình",
+    "group": "Tiền tệ & nạp tiền",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-034",
+    "choice": "B",
+    "decision": "Kim Cương thưởng vượt giới hạn chuyển sang chờ nhận",
+    "group": "Tiền tệ & nạp tiền",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-035",
+    "choice": "D",
+    "decision": "Giới hạn ví Xu ban đầu 999.999.999",
+    "group": "Tiền tệ & nạp tiền",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-036",
+    "choice": "B",
+    "decision": "Kim Cương chờ nhận phải bấm nhận thủ công khi có chỗ",
+    "group": "Tiền tệ & nạp tiền",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-037",
+    "choice": "C",
+    "decision": "Kim Cương chờ nhận tách theo nguồn, có Nhận/Nhận tất cả",
+    "group": "Tiền tệ & nạp tiền",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-038",
+    "choice": "A",
+    "decision": "Thứ tự nhận Kim Cương chờ: cũ trước",
+    "group": "Tiền tệ & nạp tiền",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-039",
+    "choice": "A",
+    "decision": "Kim Cương chờ nhận không hết hạn",
+    "group": "Tiền tệ & nạp tiền",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-040",
+    "choice": "D",
+    "decision": "Tỷ giá/gói nạp Admin cấu hình sau bảo trì, bảo toàn đơn đã chốt",
+    "group": "Tiền tệ & nạp tiền",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-041",
+    "choice": "B",
+    "decision": "1.000 VND = 1 Kim Cương theo tỷ giá gốc",
+    "group": "Tiền tệ & nạp tiền",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-042",
+    "choice": "D",
+    "decision": "Admin cấu hình gói nạp, kim cương gốc, thưởng và khuyến mãi",
+    "group": "Tiền tệ & nạp tiền",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-043",
+    "choice": "D",
+    "decision": "Admin bật/tắt các phương thức thanh toán",
+    "group": "Tiền tệ & nạp tiền",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-044",
+    "choice": "A",
+    "decision": "Nạp QR chuyển khoản ngân hàng webhook tự cộng, chống ghi trùng",
+    "group": "Tiền tệ & nạp tiền",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-045",
+    "choice": "A",
+    "decision": "Tiền sai nội dung/số tiền được chuyển Admin đối soát",
+    "group": "Tiền tệ & nạp tiền",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-046",
+    "choice": "C",
+    "decision": "Admin xử lý trường hợp sai theo từng tình huống: khớp đơn, bổ sung, hoàn tiền",
+    "group": "Tiền tệ & nạp tiền",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-047",
+    "choice": "A",
+    "decision": "Mở bán đầu tiên chỉ hỗ trợ QR ngân hàng",
+    "group": "Tiền tệ & nạp tiền",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-048",
+    "choice": "A",
+    "decision": "Mỗi đơn nạp có QR/mã đơn duy nhất",
+    "group": "Tiền tệ & nạp tiền",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-049",
+    "choice": "C",
+    "decision": "Đơn chưa thanh toán hết hạn sau 15 phút",
+    "group": "Tiền tệ & nạp tiền",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-050",
+    "choice": "B",
+    "decision": "Chuyển tiền đúng hạn nhưng webhook đến trễ vẫn hợp lệ; đến sau hết hạn Admin xử lý",
+    "group": "Tiền tệ & nạp tiền",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-051",
+    "choice": "A",
+    "decision": "Đóng popup/đăng xuất không hủy đơn nạp đang có",
+    "group": "Tiền tệ & nạp tiền",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-052",
+    "choice": "B",
+    "decision": "Có thể đồng thời tồn tại nhiều đơn nạp chưa thanh toán",
+    "group": "Tiền tệ & nạp tiền",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-053",
+    "choice": "A",
+    "decision": "Hủy đơn chưa thanh toán không cần xác nhận lần hai",
+    "group": "Tiền tệ & nạp tiền",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-054",
+    "choice": "B",
+    "decision": "Tiền đến trước lúc hủy vẫn cấp khi xác minh; đến sau hủy chuyển Admin",
+    "group": "Tiền tệ & nạp tiền",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-055",
+    "choice": "C",
+    "decision": "Hoàn tiền/chargeback xử lý bởi Admin theo từng trường hợp",
+    "group": "Tiền tệ & nạp tiền",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-056",
+    "choice": "B",
+    "decision": "Gói nạp 10k/20k/50k/100k/200k/500k VND với 10/20/50/100/200/500 KC gốc",
+    "group": "Tiền tệ & nạp tiền",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-057",
+    "choice": "C",
+    "decision": "Thưởng thêm cho từng gói nạp do Admin cấu hình",
+    "group": "Tiền tệ & nạp tiền",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-058",
+    "choice": "A",
+    "decision": "MVP có 5 cây, V1 mở thêm thành 10 cây",
+    "group": "Nông trại & túi chờ",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-059",
+    "choice": "A",
+    "decision": "MVP: cà rốt, khoai tây, cà chua, ngô, bắp cải; V1: dâu, bí ngô, dưa hấu, ớt, khoai lang",
+    "group": "Nông trại & túi chờ",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-060",
+    "choice": "B",
+    "decision": "Giá hạt tham chiếu MVP lần lượt 100/250/500/750/1000 Xu; Admin có thể chốt trước mở",
+    "group": "Nông trại & túi chờ",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-061",
+    "choice": "C",
+    "decision": "Thời gian lớn MVP lần lượt 30/60/120/180/240 phút",
+    "group": "Nông trại & túi chờ",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-062",
+    "choice": "CUSTOM",
+    "decision": "Sản lượng thu hoạch và giá bán từng cây do Admin cấu hình trước khi ra mắt, đổi sau bảo trì",
+    "group": "Nông trại & túi chờ",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-063",
+    "choice": "A",
+    "decision": "Sản lượng cơ bản cố định theo cấu hình, trừ cơ chế sâu bệnh",
+    "group": "Nông trại & túi chờ",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-064",
+    "choice": "A",
+    "decision": "Sản lượng cơ bản snapshot tại thời điểm trồng",
+    "group": "Nông trại & túi chờ",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-065",
+    "choice": "A",
+    "decision": "Thời gian sinh trưởng snapshot tại thời điểm trồng",
+    "group": "Nông trại & túi chờ",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-066",
+    "choice": "B",
+    "decision": "Bán nông sản NPC dùng giá mới nhất có hiệu lực sau bảo trì, không đảo giao dịch cũ",
+    "group": "Nông trại & túi chờ",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-067",
+    "choice": "A",
+    "decision": "Mỗi cây chỉ thu hoạch một lần rồi biến mất",
+    "group": "Nông trại & túi chờ",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-068",
+    "choice": "B",
+    "decision": "Ban đầu người chơi có 6 ô đất",
+    "group": "Nông trại & túi chờ",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-069",
+    "choice": "D",
+    "decision": "Admin cấu hình cách mở rộng đất, chi phí và giới hạn",
+    "group": "Nông trại & túi chờ",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-070",
+    "choice": "A",
+    "decision": "Mỗi lần mở rộng đất thêm 1 ô",
+    "group": "Nông trại & túi chờ",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-071",
+    "choice": "A",
+    "decision": "Mở đất theo thứ tự ID ô tăng dần",
+    "group": "Nông trại & túi chờ",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-072",
+    "choice": "A",
+    "decision": "Cây trưởng thành không héo, chờ thu hoạch hoặc nhổ",
+    "group": "Nông trại & túi chờ",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-073",
+    "choice": "A",
+    "decision": "Nhổ cây chưa chín sẽ mất cây/hạt, không hoàn lại Xu hay nông sản",
+    "group": "Nông trại & túi chờ",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-074",
+    "choice": "A",
+    "decision": "Nhổ cây trưởng thành cũng bỏ toàn bộ sản phẩm",
+    "group": "Nông trại & túi chờ",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-075",
+    "choice": "A",
+    "decision": "Thu hoạch khi túi đầy: nông sản vào hàng chờ nhận",
+    "group": "Nông trại & túi chờ",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-076",
+    "choice": "A",
+    "decision": "Một lần thu hoạch không đủ chỗ chứa toàn bộ sản lượng: chuyển toàn bộ lô vào chờ",
+    "group": "Nông trại & túi chờ",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-077",
+    "choice": "A",
+    "decision": "Hàng chờ phải nhận thủ công, không tự đưa vào túi",
+    "group": "Nông trại & túi chờ",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-078",
+    "choice": "A",
+    "decision": "Mặc định nhận nguyên cả dòng nông sản đang chờ",
+    "group": "Nông trại & túi chờ",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-079",
+    "choice": "A",
+    "decision": "Nhận tất cả theo FIFO, dừng ở dòng không chứa đủ",
+    "group": "Nông trại & túi chờ",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-080",
+    "choice": "A",
+    "decision": "Không bán NPC trực tiếp từ hàng chờ, phải nhận vào túi",
+    "group": "Nông trại & túi chờ",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-081",
+    "choice": "C",
+    "decision": "Gộp các lô chờ cùng loại nông sản thành một dòng",
+    "group": "Nông trại & túi chờ",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-082",
+    "choice": "A",
+    "decision": "Dòng gộp chờ giữ thời điểm tạo sớm nhất",
+    "group": "Nông trại & túi chờ",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-083",
+    "choice": "B",
+    "decision": "Ngoại lệ nhận một phần nếu dòng gộp lớn hơn dung lượng túi tối đa có thể có",
+    "group": "Nông trại & túi chờ",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-084",
+    "choice": "A",
+    "decision": "Ngoại lệ tự nhận tối đa số có thể chứa",
+    "group": "Nông trại & túi chờ",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-085",
+    "choice": "A",
+    "decision": "Nhận tất cả gặp ngoại lệ: nhận tối đa rồi dừng",
+    "group": "Nông trại & túi chờ",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-086",
+    "choice": "A",
+    "decision": "Mọi lần nhổ cây phải xác nhận",
+    "group": "Nông trại & túi chờ",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-087",
+    "choice": "B",
+    "decision": "Thu hoạch tất cả chỉ thu cây đã trưởng thành",
+    "group": "Nông trại & túi chờ",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-088",
+    "choice": "A",
+    "decision": "Thu hoạch tất cả xử lý ô tăng dần; lô nào túi không đủ chuyển chờ và tiếp tục",
+    "group": "Nông trại & túi chờ",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-089",
+    "choice": "B",
+    "decision": "Trồng tất cả dùng một loại hạt vào ô trống theo ID tăng dần đến hết hạt",
+    "group": "Nông trại & túi chờ",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-090",
+    "choice": "A",
+    "decision": "Trồng tất cả bắt buộc xác nhận loại và số hạt",
+    "group": "Nông trại & túi chờ",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-091",
+    "choice": "A",
+    "decision": "Trồng từng ô không cần xác nhận",
+    "group": "Nông trại & túi chờ",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-092",
+    "choice": "A",
+    "decision": "Thu hoạch tất cả không cần xác nhận",
+    "group": "Nông trại & túi chờ",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-093",
+    "choice": "B",
+    "decision": "Nhổ tất cả gồm cây non/chín và bắt buộc xác nhận",
+    "group": "Nông trại & túi chờ",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-094",
+    "choice": "A",
+    "decision": "Không có cơ chế tưới nước",
+    "group": "Nông trại & túi chờ",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-095",
+    "choice": "A",
+    "decision": "Không có cơ chế phân bón",
+    "group": "Nông trại & túi chờ",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-096",
+    "choice": "D",
+    "decision": "Sâu bệnh không xử lý kịp gây giảm sản lượng 5–10%",
+    "group": "Sâu bệnh & chim",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-097",
+    "choice": "CUSTOM",
+    "decision": "Mỗi cây có thể phát sinh sâu 1 lần trong thời gian lớn; thời hạn bắt sâu bằng 30% thời gian cây lớn từ lúc sâu xuất hiện",
+    "group": "Sâu bệnh & chim",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-098",
+    "choice": "A",
+    "decision": "Sâu chỉ phát sinh trong 70% đầu thời gian sinh trưởng",
+    "group": "Sâu bệnh & chim",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-099",
+    "choice": "C",
+    "decision": "Xác suất sâu riêng theo loại cây do Admin cấu hình sau bảo trì",
+    "group": "Sâu bệnh & chim",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-100",
+    "choice": "A",
+    "decision": "Mức phạt sâu là tỷ lệ nguyên ngẫu nhiên 5,6,7,8,9 hoặc 10 phần trăm",
+    "group": "Sâu bệnh & chim",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-101",
+    "choice": "A",
+    "decision": "Sản lượng bị trừ = floor(sản lượng cơ bản × tỷ lệ phần trăm / 100)",
+    "group": "Sâu bệnh & chim",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-102",
+    "choice": "A",
+    "decision": "Nếu làm tròn xuống 0 thì không trừ nông sản",
+    "group": "Sâu bệnh & chim",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-103",
+    "choice": "CUSTOM",
+    "decision": "Bắt sâu thủ công miễn phí; sâu làm thức ăn chim; chim non nuôi 12h và ăn sâu; chim lớn tự bắt sâu; tuổi thọ 30 ngày",
+    "group": "Sâu bệnh & chim",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-104",
+    "choice": "D",
+    "decision": "Sâu bắt thủ công là vật phẩm trong túi, stack 999, có thể chuyển sang kho thức ăn",
+    "group": "Sâu bệnh & chim",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-105",
+    "choice": "E",
+    "decision": "Tổng số sâu nuôi mỗi chim non do Admin cấu hình",
+    "group": "Sâu bệnh & chim",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-106",
+    "choice": "B",
+    "decision": "Cho chim non ăn nhiều lần; tính 12h từ lúc mua; thành chim lớn sau đủ 12h và đủ sâu",
+    "group": "Sâu bệnh & chim",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-107",
+    "choice": "B",
+    "decision": "Tuổi thọ chim lớn tính từ khi trưởng thành, chim non không hết tuổi",
+    "group": "Sâu bệnh & chim",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-108",
+    "choice": "A",
+    "decision": "Chim lớn sống 720 giờ theo thời gian Server, tính cả khi Offline",
+    "group": "Sâu bệnh & chim",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-109",
+    "choice": "E",
+    "decision": "Số lượng chim tối đa mỗi người do Admin cấu hình",
+    "group": "Sâu bệnh & chim",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-110",
+    "choice": "A",
+    "decision": "Hạn mức chim tính cả chim non và chim lớn",
+    "group": "Sâu bệnh & chim",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-111",
+    "choice": "A",
+    "decision": "Hạ hạn mức chim: chim đang có vẫn hoạt động, cấm mua thêm khi vượt trần",
+    "group": "Sâu bệnh & chim",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-112",
+    "choice": "A",
+    "decision": "Chim lớn bắt sâu kể cả khi chủ Offline",
+    "group": "Sâu bệnh & chim",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-113",
+    "choice": "B",
+    "decision": "Mỗi chim lớn bắt tối đa 4 sâu trong cửa sổ 60 phút trượt, không chờ 15 phút cố định",
+    "group": "Sâu bệnh & chim",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-114",
+    "choice": "B",
+    "decision": "Chim ưu tiên sâu có hạn xử lý gần nhất",
+    "group": "Sâu bệnh & chim",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-115",
+    "choice": "A",
+    "decision": "Nếu cùng hạn xử lý, ưu tiên ô đất có ID nhỏ hơn",
+    "group": "Sâu bệnh & chim",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-116",
+    "choice": "A",
+    "decision": "Chim lớn ăn sâu tự bắt ngay, không sinh ra sâu trong túi/kho",
+    "group": "Sâu bệnh & chim",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-117",
+    "choice": "A",
+    "decision": "Chim lớn không chết đói nếu vắng sâu",
+    "group": "Sâu bệnh & chim",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-118",
+    "choice": "CUSTOM",
+    "decision": "Bán chim lớn cho NPC nông trại lấy Xu, giá Admin cấu hình, giải phóng vị trí",
+    "group": "Sâu bệnh & chim",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-119",
+    "choice": "C",
+    "decision": "Cho phép bán chim non cho NPC với giá riêng do Admin cấu hình",
+    "group": "Sâu bệnh & chim",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-120",
+    "choice": "A",
+    "decision": "Bán chim luôn xác nhận tuổi, giá và hành động",
+    "group": "Sâu bệnh & chim",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-121",
+    "choice": "A",
+    "decision": "Giá bán chim lớn cố định không phụ thuộc tuổi còn lại",
+    "group": "Sâu bệnh & chim",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-122",
+    "choice": "A",
+    "decision": "Giá bán chim non cố định không phụ thuộc số sâu/giờ đã nuôi",
+    "group": "Sâu bệnh & chim",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-123",
+    "choice": "C",
+    "decision": "Cho chim non ăn lấy sâu từ túi trước, kho thức ăn sau, cùng một lần",
+    "group": "Sâu bệnh & chim",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-124",
+    "choice": "A",
+    "decision": "Nút cho ăn từng chim tự dùng tối đa số sâu hiện có đến khi đủ khẩu phần",
+    "group": "Sâu bệnh & chim",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-125",
+    "choice": "B",
+    "decision": "Cho ăn tất cả theo FIFO thời điểm mua chim, ưu tiên nuôi đủ chim đầu tiên",
+    "group": "Sâu bệnh & chim",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-126",
+    "choice": "A",
+    "decision": "Cho ăn tất cả cần xác nhận tổng chim và sâu dự kiến dùng",
+    "group": "Sâu bệnh & chim",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-127",
+    "choice": "A",
+    "decision": "Cho ăn một chim không cần xác nhận",
+    "group": "Sâu bệnh & chim",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-128",
+    "choice": "A",
+    "decision": "Sức chứa kho thức ăn do Admin cấu hình",
+    "group": "Sâu bệnh & chim",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-129",
+    "choice": "A",
+    "decision": "Hạ sức chứa kho: giữ số sâu cũ vượt trần, chỉ ngừng nạp thêm đến khi còn chỗ",
+    "group": "Sâu bệnh & chim",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-130",
+    "choice": "A",
+    "decision": "Cho phép chuyển sâu hai chiều túi ↔ kho; giao dịch nguyên tử, không mất/nhân đôi",
+    "group": "Sâu bệnh & chim",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-131",
+    "choice": "C",
+    "decision": "Chọn lượng sâu: nút 1/10/100/Tối đa và ô nhập thủ công",
+    "group": "Sâu bệnh & chim",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-132",
+    "choice": "A",
+    "decision": "Nếu vượt số có hoặc sức chứa: từ chối toàn bộ giao dịch, không tự giảm số lượng",
+    "group": "Sâu bệnh & chim",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-133",
+    "choice": "A",
+    "decision": "Chuyển sâu ngay sau nhấn Chuyển và xác thực, không cần xác nhận lần hai",
+    "group": "Sâu bệnh & chim",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-134",
+    "choice": "A",
+    "decision": "Bản đồ công cộng tự chia phòng, Admin cấu hình số người tối đa/phòng",
+    "group": "Bản đồ & di chuyển",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-135",
+    "choice": "A",
+    "decision": "Có nút Đến cùng phòng bạn bè; nếu phòng đầy thì từ chối",
+    "group": "Bản đồ & di chuyển",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-136",
+    "choice": "A",
+    "decision": "Mất mạng giữ suất và vị trí phòng cũ trong 30 giây; quá hạn giải phóng",
+    "group": "Bản đồ & di chuyển",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-137",
+    "choice": "A",
+    "decision": "Client prediction + Server-authoritative và nội suy chuyển động người chơi khác",
+    "group": "Bản đồ & di chuyển",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-138",
+    "choice": "A",
+    "decision": "Server từ chối di chuyển gian lận, log và chuyển dấu hiệu lặp cho Admin; không tự cấm",
+    "group": "Bản đồ & di chuyển",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-139",
+    "choice": "A",
+    "decision": "Backup Database hàng ngày + PITR; giữ bản sao ngoài Server chính; diễn tập khôi phục",
+    "group": "Dữ liệu & an toàn tài sản",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-140",
+    "choice": "A",
+    "decision": "Sau khôi phục: tự đối soát nạp tiền hợp lệ, không bỏ sót/cấp trùng; ngoại lệ Admin",
+    "group": "Dữ liệu & an toàn tài sản",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-141",
+    "choice": "A",
+    "decision": "Sổ cái bất biến cho mọi thay đổi Xu/Kim Cương/vật phẩm quan trọng; transaction id, nguyên tử",
+    "group": "Dữ liệu & an toàn tài sản",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-142",
+    "choice": "A",
+    "decision": "RBAC: Super Admin, Game Admin, Hỗ trợ, Tài chính với quyền chi tiết",
+    "group": "Dữ liệu & an toàn tài sản",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-143",
+    "choice": "A",
+    "decision": "Tất cả tài khoản Admin bắt buộc TOTP 2FA và mã khôi phục",
+    "group": "Dữ liệu & an toàn tài sản",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-144",
+    "choice": "A",
+    "decision": "Điều chỉnh tài sản thủ công bởi Admin phải có người đề xuất và người phê duyệt khác",
+    "group": "Dữ liệu & an toàn tài sản",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-145",
+    "choice": "A",
+    "decision": "Chống dò mật khẩu nhiều lớp: rate limit tài khoản/IP/thiết bị, trì hoãn, CAPTCHA nghi vấn, log",
+    "group": "Dữ liệu & an toàn tài sản",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-146",
+    "choice": "A",
+    "decision": "2FA TOTP tùy chọn cho người chơi; có mã khôi phục",
+    "group": "Dữ liệu & an toàn tài sản",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-147",
+    "choice": "A",
+    "decision": "Game Server mở rộng ngang, tự phân tải và có thể tự thêm năng lực xử lý",
+    "group": "Dữ liệu & an toàn tài sản",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-148",
+    "choice": "A",
+    "decision": "Game Server lỗi: cô lập, tự mở phòng thay thế, client nối lại, đối soát trạng thái",
+    "group": "Dữ liệu & an toàn tài sản",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-149",
+    "choice": "A",
+    "decision": "PostgreSQL có Database dự phòng và failover an toàn, không split-brain",
+    "group": "Dữ liệu & an toàn tài sản",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-150",
+    "choice": "A",
+    "decision": "Database mất đồng bộ bắt buộc: tạm dừng thay đổi tài sản thay vì chấp nhận mất giao dịch",
+    "group": "Dữ liệu & an toàn tài sản",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-151",
+    "choice": "A",
+    "decision": "Chống DDoS nhiều lớp: provider/WAF, Gateway, hạn mức từng hành động, giám sát",
+    "group": "Bảo mật hạ tầng & bảo trì",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-152",
+    "choice": "A",
+    "decision": "Cập nhật qua thử nghiệm → thông báo bảo trì → đóng giao dịch → backup → triển khai → QA → mở lại",
+    "group": "Bảo mật hạ tầng & bảo trì",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-153",
+    "choice": "B",
+    "decision": "Phát triển MVP cốt lõi trước, hệ thống khác theo phiên bản",
+    "group": "MVP & beta",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-154",
+    "choice": "B",
+    "decision": "MVP không mở nạp Kim Cương tiền thật; nạp QR để sau khi ổn định",
+    "group": "MVP & beta",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-155",
+    "choice": "B",
+    "decision": "MVP có chat công cộng, tìm/kết bạn, danh sách bạn bè và chat riêng",
+    "group": "MVP & beta",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-156",
+    "choice": "B",
+    "decision": "MVP có nông trại và sâu bệnh thủ công, chưa triển khai chim",
+    "group": "MVP & beta",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-157",
+    "choice": "A",
+    "decision": "MVP chưa có chợ giữa người chơi",
+    "group": "MVP & beta",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-158",
+    "choice": "B",
+    "decision": "MVP có cửa hàng thời trang NPC, mặc/tháo đồ và đồng bộ ngoại hình",
+    "group": "MVP & beta",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-159",
+    "choice": "B",
+    "decision": "MVP có nhiệm vụ cá nhân hằng ngày cơ bản",
+    "group": "MVP & beta",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-160",
+    "choice": "D",
+    "decision": "Closed Beta môi trường riêng có reset, sau đó Open Beta trên chính thức không reset",
+    "group": "MVP & beta",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-161",
+    "choice": "A",
+    "decision": "Chỉ mở Open Beta khi chức năng, dữ liệu, bảo mật, backup, khả năng khôi phục và tải đạt chuẩn",
+    "group": "MVP & beta",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-162",
+    "choice": "A",
+    "decision": "Kiểm thử tối thiểu 300 người Online đồng thời trước Open Beta",
+    "group": "MVP & beta",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-163",
+    "choice": "A",
+    "decision": "Phát triển theo giai đoạn có tích hợp và kiểm thử liên tục",
+    "group": "Kỹ thuật & kiến trúc",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-164",
+    "choice": "B",
+    "decision": "Client Phaser+React+TS; Game Server Go; PostgreSQL+Redis",
+    "group": "Kỹ thuật & kiến trúc",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-165",
+    "choice": "A",
+    "decision": "Dịch vụ giao dịch tập trung chịu trách nhiệm mọi thay đổi tài sản; có thể scale theo phiên bản",
+    "group": "Kỹ thuật & kiến trúc",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-166",
+    "choice": "C",
+    "decision": "WebSocket/WSS hỗn hợp: JSON cho sự kiện ít thường xuyên, nhị phân cho vị trí/chuyển động",
+    "group": "Kỹ thuật & kiến trúc",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-167",
+    "choice": "A",
+    "decision": "Bản đồ dùng Tiled Map Editor JSON cho Phaser và Server Go xác thực va chạm",
+    "group": "Kỹ thuật & kiến trúc",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-168",
+    "choice": "A",
+    "decision": "Client tìm đường theo bản đồ, Game Server kiểm tra tốc độ/va chạm từng bước",
+    "group": "Kỹ thuật & kiến trúc",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-169",
+    "choice": "A",
+    "decision": "Thời gian Server và mốc lưu Database; Offline hoặc bảo trì không dừng tiến trình",
+    "group": "Kỹ thuật & kiến trúc",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-170",
+    "choice": "B",
+    "decision": "VPS tự quản lý, ban đầu chỉ có một VPS",
+    "group": "VPS & vận hành beta",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-171",
+    "choice": "CUSTOM",
+    "decision": "Chủ dự án viết code trên máy cá nhân, push Git; VPS clone/pull và chạy",
+    "group": "VPS & vận hành beta",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-172",
+    "choice": "A",
+    "decision": "Chọn Docker Compose và mong muốn triển khai tự động qua một file .bat; chưa khả thi với VPS cũ",
+    "group": "VPS & vận hành beta",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-173",
+    "choice": "D",
+    "decision": "VPS chạy Windows Server (sau đó xác minh là Windows Server 2012 R2)",
+    "group": "VPS & vận hành beta",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-174",
+    "choice": "A",
+    "decision": "Đã từng chọn giữ Windows Server + WSL2/Ubuntu/Docker; không tương thích VPS Windows Server 2012 R2 nên bị điều chỉnh",
+    "group": "VPS & vận hành beta",
+    "status": "SUPERSEDED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-175",
+    "choice": "OBSERVED",
+    "decision": "Kiểm tra thực tế xác nhận Windows Server 2012 R2 Datacenter 6.3.9600 build 9600",
+    "group": "VPS & vận hành beta",
+    "status": "CONFIRMED",
+    "evidence": "Ảnh PowerShell từ người dùng"
+  },
+  {
+    "id": "P0-176",
+    "choice": "CUSTOM",
+    "decision": "Giữ VPS Windows Server 2012 R2 cho Closed Beta tạm thời; sau hoàn thiện chuyển hạ tầng",
+    "group": "VPS & vận hành beta",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-177",
+    "choice": "A",
+    "decision": "Closed Beta chỉ để thử, có reset; đã điều chỉnh chính sách đăng ký thành tự do",
+    "group": "VPS & vận hành beta",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-178",
+    "choice": "CUSTOM",
+    "decision": "Closed Beta đăng ký tài khoản bình thường, không dùng mã mời/whitelist/admin duyệt",
+    "group": "VPS & vận hành beta",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-179",
+    "choice": "A",
+    "decision": "Reset Closed Beta xóa toàn bộ tài khoản/dữ liệu người chơi; giữ Admin và cấu hình Server",
+    "group": "VPS & vận hành beta",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-180",
+    "choice": "A",
+    "decision": "Chọn Monorepo, toàn bộ Client, Go, Database, deploy, docs cùng một Git Repo",
+    "group": "Monorepo & Git",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-181",
+    "choice": "A",
+    "decision": "Dịch vụ giao dịch và Game Server cốt lõi đều dùng Go",
+    "group": "Monorepo & Git",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-182",
+    "choice": "A",
+    "decision": "Repository được cung cấp: https://github.com/pqcuong99/Avatar.git",
+    "group": "Monorepo & Git",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  },
+  {
+    "id": "P0-183",
+    "choice": "A",
+    "decision": "Repository mới tạo, chưa có mã nguồn; có thể đưa starter vào",
+    "group": "Monorepo & Git",
+    "status": "CONFIRMED",
+    "evidence": "Dòng hội thoại P0 của dự án; xác nhận người dùng"
+  }
+]
