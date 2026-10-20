@@ -21,3 +21,5 @@ TH-DEV-019,M7,P0,Đánh giá runtime VPS 2012 R2 hoặc chuyển môi trường 
 TH-DEV-020,M7,P0,"Closed Beta reset, giữ admin/config","Test reset trên staging, backup, dữ liệu người chơi = 0","P0-160,177–179"
 TH-DEV-021,M8,P0,Offsite PITR + PostgreSQL HA / failover,"Restore test, no split brain, P0-150 durability","P0-139,149,150"
 TH-DEV-022,M8,P0,Game Server failover và test 300 CCU,Báo cáo test 300 active users; phục hồi khi crash,"P0-148,161,162"
+TH-DEV-023,M1,P0,"Client màn hình đăng ký, đăng nhập, tạo nhân vật","Client gọi API TH-DEV-005/006: đăng ký, đăng nhập, tạo nhân vật; hiển thị lỗi tên trùng/không hợp lệ và thông báo bị ngắt phiên; dùng được trên PC và điện thoại ngang","P0-002,006,011,018,020–025"
+TH-DEV-024,M2,P0,"Map Tiled mẫu và export collision có version (đầu vào cho TH-DEV-007)","Có map Tiled JSON mẫu trong repo và bước export collision tái lập được, gắn map version; TH-DEV-007 dùng đúng bản này cho Client và Server",P0-167–168

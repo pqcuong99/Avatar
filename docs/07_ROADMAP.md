@@ -30,19 +30,38 @@ Một số đầu việc backend, security, QA thực hiện **song song** với
 
 ## Backlog đầu tiên có thể đưa lên GitHub Issues
 
-Ưu tiên thực hiện: `TH-DEV-001` → `...002` → `...003` rồi hoàn thiện M1. Danh sách đầy đủ xuất tại `master-data/dev_backlog.csv`.
+**Nguồn chuẩn duy nhất:** `master-data/dev_backlog.csv` (cột `issue_id, milestone, priority, title, definition_of_done, rule_refs`). Bảng dưới chỉ phản chiếu ID + tiêu đề để dễ đọc; nếu lệch thì **CSV thắng**. Không đặt số `TH-DEV-xxx` ở nơi khác — ticket mới thêm vào CSV với ID kế tiếp. Điều kiện xong (DoD) và `rule_refs` của từng ticket cũng chỉ đọc trong CSV.
 
-- TH-DEV-001: Clone/copy starter vào Git repo trống, thiết lập `.gitignore`, `README`, pipeline build/test.
-- TH-DEV-002: Quyết định phiên bản toolchain **còn được bảo trì** cho Go, Node.js và image Docker ở môi trường local.
-- TH-DEV-003: Chuẩn hóa migration framework + schema account/character/session.
-- TH-DEV-004: API account registration/login/session single-device + password hashing.
-- TH-DEV-005: Client màn hình đăng ký/đăng nhập/tạo nhân vật.
-- TH-DEV-006: Tiled map sample + collision export version.
-- TH-DEV-007: WebSocket handshake auth, room registry, movement authoritative.
-- TH-DEV-008: Inventory/wallet/ledger/idempotency contract và tests.
-- TH-DEV-009: Implement farm MVP với pest event deterministic persisted.
-- TH-DEV-010: Chat/friends, UI fashion, daily quests và Admin theo bảng phụ thuộc.
-- TH-DEV-011: Đánh giá ràng buộc VPS cũ; **không tuyên bố Closed Beta deploy-ready** khi chưa có runtime hợp lệ.
+Ưu tiên thực hiện: `TH-DEV-001` → `TH-DEV-002` → `TH-DEV-003` (M0), rồi hoàn thiện M1 (`TH-DEV-004`, `005`, `006`, `023`).
+
+| ID | Mốc | Ưu tiên | Tiêu đề (theo CSV) |
+|---|---|---|---|
+| TH-DEV-001 | M0 | P0 | Tạo Git repo và commit starter + tài liệu |
+| TH-DEV-002 | M0 | P0 | Chạy local Go và Client; xác thực toolchain còn hỗ trợ |
+| TH-DEV-003 | M0 | P1 | Thiết lập GitHub Actions CI |
+| TH-DEV-004 | M1 | P0 | Database migrations cho account/characters/session |
+| TH-DEV-005 | M1 | P0 | API đăng ký, login, phiên đơn, password hash |
+| TH-DEV-006 | M1 | P0 | Tạo nhân vật/đổi tên Unicode |
+| TH-DEV-007 | M2 | P0 | Map Tiled JSON và collision dữ liệu chung |
+| TH-DEV-008 | M2 | P0 | WSS, phòng tự phân tải, reconnect 30s |
+| TH-DEV-009 | M2 | P0 | Server authoritative movement và pathfinding |
+| TH-DEV-010 | M3 | P0 | Ledger, idempotency, transaction service Go |
+| TH-DEV-011 | M3 | P0 | Inventory/stack/pending claims |
+| TH-DEV-012 | M4 | P0 | Farm 5 cây, snapshot growth & yield |
+| TH-DEV-013 | M4 | P0 | Sâu bệnh có sự kiện bền vững |
+| TH-DEV-014 | M4 | P0 | NPC shop và giá version theo bảo trì |
+| TH-DEV-015 | M5 | P0 | Public chat, friends, private messages |
+| TH-DEV-016 | M6 | P1 | Fashion NPC + equipment sync |
+| TH-DEV-017 | M6 | P1 | Daily quests cơ bản |
+| TH-DEV-018 | M6 | P0 | Admin RBAC/2FA và hai admin approve |
+| TH-DEV-019 | M7 | P0 | Đánh giá runtime VPS 2012 R2 hoặc chuyển môi trường thử nghiệm |
+| TH-DEV-020 | M7 | P0 | Closed Beta reset, giữ admin/config |
+| TH-DEV-021 | M8 | P0 | Offsite PITR + PostgreSQL HA / failover |
+| TH-DEV-022 | M8 | P0 | Game Server failover và test 300 CCU |
+| TH-DEV-023 | M1 | P0 | Client màn hình đăng ký, đăng nhập, tạo nhân vật |
+| TH-DEV-024 | M2 | P0 | Map Tiled mẫu và export collision có version (đầu vào cho TH-DEV-007) |
+
+Lưu ý: `TH-DEV-019` giữ nguyên ràng buộc — **không tuyên bố Closed Beta deploy-ready** khi chưa có runtime hợp lệ.
 
 ## Phần sau MVP theo quyết định
 
