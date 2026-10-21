@@ -9,7 +9,7 @@ import (
 
 	"github.com/jackc/pgx/v5"
 
-	"example.com/project-thanh/transaction-service/internal/apperr"
+	"example.com/avatar/transaction-service/internal/apperr"
 )
 
 // Daily personal quests (MVP-07, P0-159). The quest list, targets, rewards and

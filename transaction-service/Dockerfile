@@ -11,10 +11,10 @@ RUN CGO_ENABLED=0 GOOS=linux GOWORK=off go build -trimpath -o /out/transaction-s
  && CGO_ENABLED=0 GOOS=linux GOWORK=off go build -trimpath -o /out/beta-reset ./cmd/beta-reset
 
 FROM alpine:3.24
-RUN addgroup -S thanh && adduser -S thanh -G thanh
+RUN addgroup -S avatar && adduser -S avatar -G avatar
 COPY --from=build /out/transaction-service /out/migrate /out/beta-reset /usr/local/bin/
 COPY database /app/database
 WORKDIR /app
-USER thanh
+USER avatar
 EXPOSE 8082
 CMD ["/usr/local/bin/transaction-service"]

@@ -6,8 +6,8 @@ import (
 
 	"github.com/jackc/pgx/v5"
 
-	"example.com/project-thanh/transaction-service/internal/apperr"
-	"example.com/project-thanh/transaction-service/internal/farm"
+	"example.com/avatar/transaction-service/internal/apperr"
+	"example.com/avatar/transaction-service/internal/farm"
 )
 
 // Crop pending claims (P0-077..085, docs/02 §4).

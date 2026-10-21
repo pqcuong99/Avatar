@@ -13,7 +13,7 @@ import (
 
 	"github.com/jackc/pgx/v5"
 
-	"example.com/project-thanh/transaction-service/internal/betareset"
+	"example.com/avatar/transaction-service/internal/betareset"
 )
 
 func main() {

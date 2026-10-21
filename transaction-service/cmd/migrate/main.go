@@ -11,7 +11,7 @@ import (
 
 	"github.com/jackc/pgx/v5"
 
-	"example.com/project-thanh/transaction-service/internal/migrate"
+	"example.com/avatar/transaction-service/internal/migrate"
 )
 
 func main() {

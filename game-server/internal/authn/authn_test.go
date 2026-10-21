@@ -8,8 +8,8 @@ import (
 
 	"golang.org/x/crypto/bcrypt"
 
-	"example.com/project-thanh/game-server/internal/authn"
-	"example.com/project-thanh/game-server/internal/testenv"
+	"example.com/avatar/game-server/internal/authn"
+	"example.com/avatar/game-server/internal/testenv"
 )
 
 func newStore(t *testing.T) *authn.Store {

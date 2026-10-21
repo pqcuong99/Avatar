@@ -12,9 +12,9 @@ import (
 	"github.com/pquerna/otp/totp"
 	"golang.org/x/crypto/bcrypt"
 
-	"example.com/project-thanh/game-server/internal/admin"
-	"example.com/project-thanh/game-server/internal/secretbox"
-	"example.com/project-thanh/game-server/internal/testenv"
+	"example.com/avatar/game-server/internal/admin"
+	"example.com/avatar/game-server/internal/secretbox"
+	"example.com/avatar/game-server/internal/testenv"
 )
 
 type env struct {

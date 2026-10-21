@@ -9,9 +9,9 @@ import (
 	"github.com/jackc/pgx/v5"
 	"github.com/jackc/pgx/v5/pgxpool"
 
-	"example.com/project-thanh/transaction-service/internal/betareset"
-	"example.com/project-thanh/transaction-service/internal/econ"
-	"example.com/project-thanh/transaction-service/internal/testdb"
+	"example.com/avatar/transaction-service/internal/betareset"
+	"example.com/avatar/transaction-service/internal/econ"
+	"example.com/avatar/transaction-service/internal/testdb"
 )
 
 func TestO04O05ClosedBetaReset(t *testing.T) {

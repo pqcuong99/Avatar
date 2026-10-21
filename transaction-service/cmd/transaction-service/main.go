@@ -14,8 +14,8 @@ import (
 
 	"github.com/jackc/pgx/v5/pgxpool"
 
-	"example.com/project-thanh/transaction-service/internal/econ"
-	"example.com/project-thanh/transaction-service/internal/httpapi"
+	"example.com/avatar/transaction-service/internal/econ"
+	"example.com/avatar/transaction-service/internal/httpapi"
 )
 
 func main() {

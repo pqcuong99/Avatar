@@ -5,7 +5,7 @@ import (
 	"context"
 	"encoding/json"
 
-	"example.com/project-thanh/transaction-service/internal/apperr"
+	"example.com/avatar/transaction-service/internal/apperr"
 )
 
 // command is one asset operation. Its JSON form (without request_id) is the

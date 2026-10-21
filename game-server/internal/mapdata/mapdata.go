@@ -10,7 +10,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"example.com/project-thanh/game-server/internal/sim"
+	"example.com/avatar/game-server/internal/sim"
 )
 
 type NPC struct {

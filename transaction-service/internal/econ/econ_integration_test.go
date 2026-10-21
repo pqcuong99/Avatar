@@ -11,9 +11,9 @@ import (
 
 	"github.com/jackc/pgx/v5/pgxpool"
 
-	"example.com/project-thanh/transaction-service/internal/apperr"
-	"example.com/project-thanh/transaction-service/internal/econ"
-	"example.com/project-thanh/transaction-service/internal/testdb"
+	"example.com/avatar/transaction-service/internal/apperr"
+	"example.com/avatar/transaction-service/internal/econ"
+	"example.com/avatar/transaction-service/internal/testdb"
 )
 
 // stubRand: Float64 below a crop's pest probability means "pest"; Int64N

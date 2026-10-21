@@ -10,8 +10,8 @@ import (
 
 	"github.com/pquerna/otp/totp"
 
-	"example.com/project-thanh/game-server/internal/authn"
-	"example.com/project-thanh/game-server/internal/secretbox"
+	"example.com/avatar/game-server/internal/authn"
+	"example.com/avatar/game-server/internal/secretbox"
 )
 
 type captureMail struct {

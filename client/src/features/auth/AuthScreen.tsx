@@ -84,7 +84,7 @@ export function AuthScreen({ onLoggedIn }: { onLoggedIn: () => void }) {
       <div className="auth-card">
         <div className="brand">
           <div className="brand-logo" aria-hidden="true">🌱</div>
-          <h1>Project Thanh</h1>
+          <h1>Avatar</h1>
           <p>Thị trấn nhỏ · nông trại · bạn bè</p>
         </div>
         {tabbed && (

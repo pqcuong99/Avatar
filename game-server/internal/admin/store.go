@@ -24,7 +24,7 @@ import (
 	"github.com/pquerna/otp/totp"
 	"golang.org/x/crypto/bcrypt"
 
-	"example.com/project-thanh/game-server/internal/secretbox"
+	"example.com/avatar/game-server/internal/secretbox"
 )
 
 var (
@@ -108,7 +108,7 @@ func (s *Store) Create(ctx context.Context, login string, roles []string) (*Crea
 	if err != nil {
 		return nil, err
 	}
-	key, err := totp.Generate(totp.GenerateOpts{Issuer: "Project Thanh Admin", AccountName: login})
+	key, err := totp.Generate(totp.GenerateOpts{Issuer: "Avatar Admin", AccountName: login})
 	if err != nil {
 		return nil, err
 	}

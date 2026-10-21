@@ -7,7 +7,7 @@ import (
 
 	"github.com/jackc/pgx/v5"
 
-	"example.com/project-thanh/transaction-service/internal/apperr"
+	"example.com/avatar/transaction-service/internal/apperr"
 )
 
 // NPC trade (docs/02 §7). Prices come only from the published config version;

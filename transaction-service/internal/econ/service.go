@@ -32,9 +32,9 @@ import (
 	"github.com/jackc/pgx/v5/pgconn"
 	"github.com/jackc/pgx/v5/pgxpool"
 
-	"example.com/project-thanh/transaction-service/internal/apperr"
-	"example.com/project-thanh/transaction-service/internal/farm"
-	"example.com/project-thanh/transaction-service/internal/inventory"
+	"example.com/avatar/transaction-service/internal/apperr"
+	"example.com/avatar/transaction-service/internal/farm"
+	"example.com/avatar/transaction-service/internal/inventory"
 )
 
 type Service struct {

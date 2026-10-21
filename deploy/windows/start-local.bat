@@ -13,7 +13,7 @@ if errorlevel 1 (
   pause
   exit /b 1
 )
-echo [Project Thanh] Dang khoi dong moi truong local...
+echo [Avatar] Dang khoi dong moi truong local...
 docker compose -f deploy\compose.local.yml up -d --build
 if errorlevel 1 (
   echo [ERROR] Khong the khoi dong Docker Compose.

@@ -8,8 +8,8 @@ import (
 	"github.com/jackc/pgx/v5"
 	"github.com/jackc/pgx/v5/pgconn"
 
-	"example.com/project-thanh/transaction-service/internal/apperr"
-	"example.com/project-thanh/transaction-service/internal/names"
+	"example.com/avatar/transaction-service/internal/apperr"
+	"example.com/avatar/transaction-service/internal/names"
 )
 
 // Character is the public summary of a character.

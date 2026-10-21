@@ -11,8 +11,8 @@ import (
 
 	"github.com/jackc/pgx/v5/pgxpool"
 
-	"example.com/project-thanh/game-server/internal/social"
-	"example.com/project-thanh/game-server/internal/testenv"
+	"example.com/avatar/game-server/internal/social"
+	"example.com/avatar/game-server/internal/testenv"
 )
 
 type env struct {

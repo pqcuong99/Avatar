@@ -10,7 +10,7 @@ import (
 
 	"github.com/jackc/pgx/v5"
 
-	"example.com/project-thanh/game-server/internal/textkey"
+	"example.com/avatar/game-server/internal/textkey"
 )
 
 // ---------------------------------------------------------------------------

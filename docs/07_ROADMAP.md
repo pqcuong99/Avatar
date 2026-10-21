@@ -1,4 +1,4 @@
-# LỘ TRÌNH PHÁT TRIỂN PROJECT THANH
+# LỘ TRÌNH PHÁT TRIỂN AVATAR
 
 **Nguyên tắc:** P0-163 chốt xây dựng **từng giai đoạn, tích hợp và kiểm thử liên tục**. Không hứa lịch ngày/tuần khi chưa biết số người code, giờ làm và cấu hình máy. Những “M0–M8” dưới đây là **[ĐỀ XUẤT PHÂN RÃ]** để triển khai đúng phạm vi MVP đã chốt.
 

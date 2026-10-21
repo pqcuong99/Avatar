@@ -17,8 +17,8 @@ import (
 
 	"github.com/jackc/pgx/v5/pgxpool"
 
-	adminpkg "example.com/project-thanh/game-server/internal/admin"
-	"example.com/project-thanh/game-server/internal/secretbox"
+	adminpkg "example.com/avatar/game-server/internal/admin"
+	"example.com/avatar/game-server/internal/secretbox"
 )
 
 func main() {

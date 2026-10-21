@@ -18,13 +18,13 @@ import (
 
 	"github.com/coder/websocket"
 
-	"example.com/project-thanh/game-server/internal/authn"
-	"example.com/project-thanh/game-server/internal/gamedb"
-	"example.com/project-thanh/game-server/internal/httpx"
-	"example.com/project-thanh/game-server/internal/proto"
-	"example.com/project-thanh/game-server/internal/social"
-	"example.com/project-thanh/game-server/internal/txclient"
-	"example.com/project-thanh/game-server/internal/world"
+	"example.com/avatar/game-server/internal/authn"
+	"example.com/avatar/game-server/internal/gamedb"
+	"example.com/avatar/game-server/internal/httpx"
+	"example.com/avatar/game-server/internal/proto"
+	"example.com/avatar/game-server/internal/social"
+	"example.com/avatar/game-server/internal/txclient"
+	"example.com/avatar/game-server/internal/world"
 )
 
 type Handler struct {

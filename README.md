@@ -1,6 +1,6 @@
-# Project Thanh — Avatar Web Game (Monorepo)
+# Avatar — Web Game (Monorepo)
 
-Game xã hội 2D trên trình duyệt kiểu Avatar: Quảng trường nhiều người chơi, chat, bạn bè, nông trại 5 cây, NPC, thời trang, nhiệm vụ ngày và trang Admin.
+Game xã hội 2D trên trình duyệt: Quảng trường nhiều người chơi, chat, bạn bè, nông trại 5 cây, NPC, thời trang, nhiệm vụ ngày và trang Admin.
 
 **Trạng thái:** MVP lõi đã chạy end-to-end **trên máy local**; chưa có hạ tầng Beta. Bảng nghiệm thu PASS/PARTIAL/BLOCKED và các điểm chờ quyết định: **[docs/IMPLEMENTATION_STATUS.md](docs/IMPLEMENTATION_STATUS.md)**.
 

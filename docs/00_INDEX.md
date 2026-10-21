@@ -1,4 +1,4 @@
-# PROJECT THANH — HỒ SƠ BÀN GIAO & KHỞI ĐỘNG PHÁT TRIỂN
+# AVATAR — HỒ SƠ BÀN GIAO & KHỞI ĐỘNG PHÁT TRIỂN
 
 **Ngày chốt bản:** 20/10/2026  
 **Repo do chủ dự án xác nhận:** `https://github.com/pqcuong99/Avatar.git` (được xác nhận là repo mới, chưa có code)  

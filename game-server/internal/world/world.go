@@ -16,10 +16,10 @@ import (
 	"sort"
 	"time"
 
-	"example.com/project-thanh/game-server/internal/gamedb"
-	"example.com/project-thanh/game-server/internal/mapdata"
-	"example.com/project-thanh/game-server/internal/proto"
-	"example.com/project-thanh/game-server/internal/sim"
+	"example.com/avatar/game-server/internal/gamedb"
+	"example.com/avatar/game-server/internal/mapdata"
+	"example.com/avatar/game-server/internal/proto"
+	"example.com/avatar/game-server/internal/sim"
 )
 
 const ProtocolVersion = 1

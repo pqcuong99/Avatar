@@ -3,7 +3,7 @@ package econ_test
 import (
 	"testing"
 
-	"example.com/project-thanh/transaction-service/internal/testdb"
+	"example.com/avatar/transaction-service/internal/testdb"
 )
 
 func TestA07RenameConsumesTheCardOnlyOnSuccess(t *testing.T) {

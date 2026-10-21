@@ -94,7 +94,7 @@ export function GameView({ me, onLogout }: { me: Me; onLogout: () => void }) {
 
     const scene = new WorldScene();
     sceneRef.current = scene;
-    if (import.meta.env.DEV) (window as unknown as { __thanhScene: WorldScene }).__thanhScene = scene;
+    if (import.meta.env.DEV) (window as unknown as { __avatarScene: WorldScene }).__avatarScene = scene;
     scene.setSelf(character.id, character.display_name);
     let game: Phaser.Game | null = null;
     // WebGL cannot start on a 0x0 canvas (a hidden tab or pane at load time):

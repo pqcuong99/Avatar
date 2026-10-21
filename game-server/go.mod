@@ -1,4 +1,4 @@
-module example.com/project-thanh/game-server
+module example.com/avatar/game-server
 
 go 1.27.0
 

@@ -14,14 +14,14 @@ if not defined PG_ID (
   exit /b 1
 )
 
-echo [Project Thanh] Go: game-server + transaction-service (vet, test -race)...
+echo [Avatar] Go: game-server + transaction-service (vet, test -race)...
 docker run --rm --network deploy_default -e TEST_DATABASE_URL=%TEST_DB% -v "%CD%:/src" -v thanh-gomod:/go/pkg/mod -w /src golang:1.27 sh -c "cd game-server && test -z \"$(gofmt -l .)\" && go vet ./... && go test -race -count=1 ./... && cd ../transaction-service && test -z \"$(gofmt -l .)\" && go vet ./... && go test -race -count=1 -p 1 ./..."
 if errorlevel 1 (
   echo [FAIL] Go tests
   exit /b 1
 )
 
-echo [Project Thanh] Client: test, typecheck, build...
+echo [Avatar] Client: test, typecheck, build...
 pushd client
 call npm ci || (popd & echo [FAIL] npm ci & exit /b 1)
 call npm test || (popd & echo [FAIL] client tests & exit /b 1)

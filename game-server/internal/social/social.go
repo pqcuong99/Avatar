@@ -16,7 +16,7 @@ import (
 	"github.com/jackc/pgx/v5/pgconn"
 	"github.com/jackc/pgx/v5/pgxpool"
 
-	"example.com/project-thanh/game-server/internal/textkey"
+	"example.com/avatar/game-server/internal/textkey"
 )
 
 var (

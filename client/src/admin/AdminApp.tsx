@@ -48,7 +48,7 @@ function AdminLogin({ onDone }: { onDone: () => void }) {
   return (
     <main className="auth-page admin-bg">
       <div className="auth-card">
-        <h1 className="title">Quản trị Project Thanh</h1>
+        <h1 className="title">Quản trị Avatar</h1>
         <p className="muted small">Tài khoản Admin tách biệt với người chơi. Bắt buộc xác thực 2 lớp.</p>
         <form className="form" onSubmit={submit}>
           {!challenge ? (
@@ -76,7 +76,7 @@ function Console({ me, onLogout }: { me: Me; onLogout: () => void }) {
   return (
     <div className="admin">
       <header className="admin-head">
-        <b>🛠 Project Thanh · Admin</b>
+        <b>🛠 Avatar · Admin</b>
         <nav className="admin-tabs">
           {can('player.read') && <button className={tab === 'players' ? 'active' : ''} onClick={() => setTab('players')}>Người chơi</button>}
           {(can('asset.adjust.propose') || can('asset.adjust.approve')) && <button className={tab === 'adjustments' ? 'active' : ''} onClick={() => setTab('adjustments')}>Điều chỉnh tài sản</button>}

@@ -8,10 +8,10 @@ RUN CGO_ENABLED=0 GOOS=linux GOWORK=off go build -trimpath -o /out/game-server .
  && CGO_ENABLED=0 GOOS=linux GOWORK=off go build -trimpath -o /out/admin ./cmd/admin
 
 FROM alpine:3.24
-RUN addgroup -S thanh && adduser -S thanh -G thanh
+RUN addgroup -S avatar && adduser -S avatar -G avatar
 COPY --from=build /out/game-server /out/admin /usr/local/bin/
 COPY shared/maps /app/maps
 ENV MAP_DIR=/app/maps
-USER thanh
+USER avatar
 EXPOSE 8081
 CMD ["/usr/local/bin/game-server"]

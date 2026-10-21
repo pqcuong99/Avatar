@@ -7,8 +7,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"example.com/project-thanh/game-server/internal/mapdata"
-	"example.com/project-thanh/game-server/internal/sim"
+	"example.com/avatar/game-server/internal/mapdata"
+	"example.com/avatar/game-server/internal/sim"
 )
 
 func repoFile(t *testing.T, parts ...string) string {

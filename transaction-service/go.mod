@@ -1,4 +1,4 @@
-module example.com/project-thanh/transaction-service
+module example.com/avatar/transaction-service
 
 go 1.27.0
 

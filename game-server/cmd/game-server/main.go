@@ -16,18 +16,18 @@ import (
 
 	"github.com/jackc/pgx/v5/pgxpool"
 
-	"example.com/project-thanh/game-server/internal/admin"
-	"example.com/project-thanh/game-server/internal/api"
-	"example.com/project-thanh/game-server/internal/authn"
-	"example.com/project-thanh/game-server/internal/gamedb"
-	"example.com/project-thanh/game-server/internal/httpx"
-	"example.com/project-thanh/game-server/internal/mail"
-	"example.com/project-thanh/game-server/internal/mapdata"
-	"example.com/project-thanh/game-server/internal/realtime"
-	"example.com/project-thanh/game-server/internal/secretbox"
-	"example.com/project-thanh/game-server/internal/social"
-	"example.com/project-thanh/game-server/internal/txclient"
-	"example.com/project-thanh/game-server/internal/world"
+	"example.com/avatar/game-server/internal/admin"
+	"example.com/avatar/game-server/internal/api"
+	"example.com/avatar/game-server/internal/authn"
+	"example.com/avatar/game-server/internal/gamedb"
+	"example.com/avatar/game-server/internal/httpx"
+	"example.com/avatar/game-server/internal/mail"
+	"example.com/avatar/game-server/internal/mapdata"
+	"example.com/avatar/game-server/internal/realtime"
+	"example.com/avatar/game-server/internal/secretbox"
+	"example.com/avatar/game-server/internal/social"
+	"example.com/avatar/game-server/internal/txclient"
+	"example.com/avatar/game-server/internal/world"
 )
 
 const cookieName = "thanh_session"
@@ -197,7 +197,7 @@ func refreshRuntime(ctx context.Context, db *gamedb.Store, w *world.World, log *
 // development a real key is required, and email stays off until a provider
 // is configured (GAP-16).
 func securityFromEnv(log *slog.Logger) (*authn.Security, error) {
-	sec := &authn.Security{Issuer: "Project Thanh"}
+	sec := &authn.Security{Issuer: "Avatar"}
 	local := os.Getenv("THANH_ENV") == "local"
 	if k := os.Getenv("TOTP_ENCRYPTION_KEY"); k != "" {
 		box, err := secretbox.New(k)

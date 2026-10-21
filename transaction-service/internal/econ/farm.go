@@ -3,8 +3,8 @@ package econ
 import (
 	"time"
 
-	"example.com/project-thanh/transaction-service/internal/apperr"
-	"example.com/project-thanh/transaction-service/internal/farm"
+	"example.com/avatar/transaction-service/internal/apperr"
+	"example.com/avatar/transaction-service/internal/farm"
 )
 
 // Farm commands (docs/02 §3-5, P0-067..102). All of them run inside Execute.

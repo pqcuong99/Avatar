@@ -21,7 +21,7 @@ import (
 	"github.com/jackc/pgx/v5"
 	"github.com/jackc/pgx/v5/pgxpool"
 
-	"example.com/project-thanh/transaction-service/internal/migrate"
+	"example.com/avatar/transaction-service/internal/migrate"
 )
 
 // New creates and migrates a database and returns a pool connected to it.

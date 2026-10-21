@@ -1,4 +1,4 @@
-// Project Thanh realtime binary protocol, version 1 (P0-166: binary for
+// Avatar realtime binary protocol, version 1 (P0-166: binary for
 // movement/state, JSON for low-frequency events).
 //
 // Both sides encode these messages with the Protocol Buffers wire format
@@ -13,7 +13,7 @@
 // the JSON `hello` message ([CẦN TEST], GAP-15), never hard-coded here.
 syntax = "proto3";
 
-package thanh.realtime.v1;
+package avatar.realtime.v1;
 
 // Client -> Server (binary WebSocket frame).
 message ClientFrame {

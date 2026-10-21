@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"strings"
 
-	"example.com/project-thanh/game-server/internal/authn"
-	"example.com/project-thanh/game-server/internal/httpx"
-	"example.com/project-thanh/game-server/internal/world"
+	"example.com/avatar/game-server/internal/authn"
+	"example.com/avatar/game-server/internal/httpx"
+	"example.com/avatar/game-server/internal/world"
 )
 
 var (

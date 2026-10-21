@@ -10,9 +10,9 @@ import (
 	"time"
 	"unicode"
 
-	"example.com/project-thanh/game-server/internal/httpx"
-	"example.com/project-thanh/game-server/internal/social"
-	"example.com/project-thanh/game-server/internal/world"
+	"example.com/avatar/game-server/internal/httpx"
+	"example.com/avatar/game-server/internal/social"
+	"example.com/avatar/game-server/internal/world"
 )
 
 var (

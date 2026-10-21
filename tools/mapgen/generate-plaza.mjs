@@ -1,4 +1,4 @@
-// Generates the DEV SAMPLE map of Project Thanh:
+// Generates the DEV SAMPLE map of Avatar:
 //   shared/maps/tiles_placeholder.png  original procedural 32x32 tileset (no third-party art)
 //   shared/maps/plaza.json             Tiled JSON map (open/edit it in Tiled Map Editor)
 //   shared/maps/maps.json              map registry read by the Game Server

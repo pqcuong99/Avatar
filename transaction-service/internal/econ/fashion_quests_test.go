@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"example.com/project-thanh/transaction-service/internal/econ"
-	"example.com/project-thanh/transaction-service/internal/testdb"
+	"example.com/avatar/transaction-service/internal/econ"
+	"example.com/avatar/transaction-service/internal/testdb"
 )
 
 // withFashionAndQuests adds sample fashion items (catalog rows are loaded

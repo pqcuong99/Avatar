@@ -8,7 +8,7 @@ import (
 
 	"github.com/jackc/pgx/v5"
 
-	"example.com/project-thanh/transaction-service/internal/apperr"
+	"example.com/avatar/transaction-service/internal/apperr"
 )
 
 func mustJSON(v any) json.RawMessage {

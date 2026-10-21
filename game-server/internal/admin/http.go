@@ -11,10 +11,10 @@ import (
 	"strconv"
 	"strings"
 
-	"example.com/project-thanh/game-server/internal/authn"
-	"example.com/project-thanh/game-server/internal/httpx"
-	"example.com/project-thanh/game-server/internal/txclient"
-	"example.com/project-thanh/game-server/internal/world"
+	"example.com/avatar/game-server/internal/authn"
+	"example.com/avatar/game-server/internal/httpx"
+	"example.com/avatar/game-server/internal/txclient"
+	"example.com/avatar/game-server/internal/world"
 )
 
 const cookieName = "thanh_admin"

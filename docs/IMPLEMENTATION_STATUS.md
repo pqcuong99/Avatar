@@ -1,4 +1,4 @@
-# Project Thanh — Trạng thái hiện thực MVP
+# Avatar — Trạng thái hiện thực MVP
 
 **Cập nhật:** 21/10/2026 · **Nhánh:** `feat/mvp-core-loop` · **Nguồn yêu cầu:** `docs/ai-handoff-v2/MASTER_SPEC_ALL_IN_ONE.md`
 

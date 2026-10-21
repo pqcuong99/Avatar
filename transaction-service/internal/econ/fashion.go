@@ -6,7 +6,7 @@ import (
 
 	"github.com/jackc/pgx/v5"
 
-	"example.com/project-thanh/transaction-service/internal/apperr"
+	"example.com/avatar/transaction-service/internal/apperr"
 )
 
 // Fashion (MVP-06): one instance per item, one bag slot per instance

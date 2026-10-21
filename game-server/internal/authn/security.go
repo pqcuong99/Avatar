@@ -20,8 +20,8 @@ import (
 	"github.com/pquerna/otp/totp"
 	"golang.org/x/crypto/bcrypt"
 
-	"example.com/project-thanh/game-server/internal/mail"
-	"example.com/project-thanh/game-server/internal/secretbox"
+	"example.com/avatar/game-server/internal/mail"
+	"example.com/avatar/game-server/internal/secretbox"
 )
 
 // Optional player 2FA (P0-146), recovery email and password reset (P0-011,
@@ -331,7 +331,7 @@ func (s *Store) SetEmail(ctx context.Context, sec *Security, accountID, email st
 	if err != nil {
 		return err
 	}
-	return sec.Mail.Send(ctx, email, "Project Thanh: mã xác minh email", "Mã xác minh: "+code+" (hết hạn sau 30 phút).")
+	return sec.Mail.Send(ctx, email, "Avatar: mã xác minh email", "Mã xác minh: "+code+" (hết hạn sau 30 phút).")
 }
 
 // useCode spends the newest unexpired code of a purpose; five wrong tries
@@ -395,7 +395,7 @@ func (s *Store) RequestReset(ctx context.Context, sec *Security, username string
 		VALUES ($1, 'reset_password', $2, $3, $4, $5)`, id, *email, digest(id, "reset_password", code), now, now.Add(ResetCodeTTL)); err != nil {
 		return err
 	}
-	return sec.Mail.Send(ctx, *email, "Project Thanh: đặt lại mật khẩu", "Mã đặt lại mật khẩu: "+code+" (hết hạn sau 10 phút). Bỏ qua thư này nếu bạn không yêu cầu.")
+	return sec.Mail.Send(ctx, *email, "Avatar: đặt lại mật khẩu", "Mã đặt lại mật khẩu: "+code+" (hết hạn sau 10 phút). Bỏ qua thư này nếu bạn không yêu cầu.")
 }
 
 // ConfirmReset sets a new password and revokes every session of the account

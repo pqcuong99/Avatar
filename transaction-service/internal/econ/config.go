@@ -11,7 +11,7 @@ import (
 	"github.com/jackc/pgx/v5"
 	"github.com/jackc/pgx/v5/pgxpool"
 
-	"example.com/project-thanh/transaction-service/internal/inventory"
+	"example.com/avatar/transaction-service/internal/inventory"
 )
 
 // DefaultXuCap is P0-035, used while no published config overrides it.

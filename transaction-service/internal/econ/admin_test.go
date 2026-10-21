@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"example.com/project-thanh/transaction-service/internal/testdb"
+	"example.com/avatar/transaction-service/internal/testdb"
 )
 
 func TestMaintenanceStopsPlayerCommandsWithoutCachingTheRefusal(t *testing.T) {
