@@ -9,3 +9,16 @@ header p { color: #b6c9dc; margin: 0 0 18px; }
 .game-frame canvas { display: block; max-width: 100%; }
 .help { font-size: 14px; margin: 14px 0 6px; }
 .note { font-size: 12px; color: #a9c0da; margin: 0; }
+
+/* P0-002: điện thoại màn hình ngang (vd 812x375). Bỏ chrome trang để bản đồ nằm gọn
+   trong viewport, không phải cuộn; chữ trên canvas vẫn báo đây là bản đồ demo. */
+@media (orientation: landscape) and (max-height: 500px) {
+  .layout { width: 100%; padding: 0; }
+  header, .help, .note { display: none; }
+  .panel { background: none; border: 0; border-radius: 0; padding: 0; }
+  .game-frame {
+    width: min(100%, calc(100vh * 5 / 3));
+    width: min(100%, calc(100dvh * 5 / 3));
+    margin: 0 auto;
+  }
+}

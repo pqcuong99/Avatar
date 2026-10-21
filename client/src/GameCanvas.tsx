@@ -1,6 +1,48 @@
 import { useEffect, useRef } from 'react';
 import Phaser from 'phaser';
 
+const WORLD_WIDTH = 800;
+const WORLD_HEIGHT = 480;
+const PLAYER_RADIUS = 15;
+// Vùng tâm nhân vật được phép đứng. Dùng chung cho di chuyển và điểm đến của click,
+// để điểm đến luôn tới được và auto-path luôn kết thúc.
+const WALKABLE = new Phaser.Geom.Rectangle(
+  PLAYER_RADIUS,
+  PLAYER_RADIUS,
+  WORLD_WIDTH - 2 * PLAYER_RADIUS,
+  WORLD_HEIGHT - 2 * PLAYER_RADIUS,
+);
+
+function clampToWalkable(x: number, y: number) {
+  return new Phaser.Math.Vector2(
+    Phaser.Math.Clamp(x, WALKABLE.left, WALKABLE.right),
+    Phaser.Math.Clamp(y, WALKABLE.top, WALKABLE.bottom),
+  );
+}
+
+// Phaser đo chiều cao chữ bằng testString; chuỗi mặc định "|MÉqgy" không có dấu chồng
+// (Ả, Ồ, Ế...) nên dấu bị cắt. Ẩ Ẫ Ẳ Ẵ là những chữ cao nhất ở Segoe UI/Tahoma; padding
+// top chừa chỗ cho phần khử răng cưa. Mọi Text (tên nhân vật, chat, NPC) phải tạo qua
+// addViText, vì tên phân biệt dấu (P0-022): "Ảnh" và "Ánh" không được trông giống nhau.
+const VI_TEXT_STYLE: Phaser.Types.GameObjects.Text.TextStyle = {
+  testString: '|ÉqgỵẢỒẾỐỸẨẪẲẴ',
+  padding: { top: 2 },
+};
+
+function addViText(
+  scene: Phaser.Scene,
+  x: number,
+  y: number,
+  text: string | string[],
+  style: Phaser.Types.GameObjects.Text.TextStyle = {},
+) {
+  return scene.add.text(x, y, text, {
+    ...VI_TEXT_STYLE,
+    ...style,
+    padding: { ...VI_TEXT_STYLE.padding, ...style.padding },
+  });
+}
+
 class DemoScene extends Phaser.Scene {
   private player!: Phaser.GameObjects.Arc;
   private cursors!: Phaser.Types.Input.Keyboard.CursorKeys;
@@ -12,14 +54,20 @@ class DemoScene extends Phaser.Scene {
   create() {
     const grid = this.add.graphics();
     grid.lineStyle(1, 0x26354a, 0.9);
-    for (let x = 0; x <= 800; x += 40) grid.lineBetween(x, 0, x, 480);
-    for (let y = 0; y <= 480; y += 40) grid.lineBetween(0, y, 800, y);
-    this.add.text(20, 18, 'BẢN ĐỒ DEMO · CHƯA KẾT NỐI GAME SERVER', { color: '#bad7f7', fontSize: '15px' });
-    this.player = this.add.circle(400, 240, 15, 0x68dd8a).setStrokeStyle(3, 0xffffff);
+    for (let x = 0; x <= WORLD_WIDTH; x += 40) grid.lineBetween(x, 0, x, WORLD_HEIGHT);
+    for (let y = 0; y <= WORLD_HEIGHT; y += 40) grid.lineBetween(0, y, WORLD_WIDTH, y);
+    addViText(this, 20, 18, 'BẢN ĐỒ DEMO · CHƯA KẾT NỐI GAME SERVER', { color: '#bad7f7', fontSize: '15px' });
+    this.player = this.add.circle(WORLD_WIDTH / 2, WORLD_HEIGHT / 2, PLAYER_RADIUS, 0x68dd8a).setStrokeStyle(3, 0xffffff);
     this.cursors = this.input.keyboard!.createCursorKeys();
     this.wasd = this.input.keyboard!.addKeys('W,A,S,D') as Record<string, Phaser.Input.Keyboard.Key>;
+    // Quy tắc P0-005: update() chỉ đọc isDown, nên một lần nhấp phím ngắn hơn 1 frame sẽ lọt.
+    // Sự kiện down luôn được phát, kể cả khi phím đã nhả trước khi update() chạy.
+    const { up, down, left, right } = this.cursors;
+    for (const key of [up, down, left, right, this.wasd.W, this.wasd.A, this.wasd.S, this.wasd.D]) {
+      key.on(Phaser.Input.Keyboard.Events.DOWN, () => { this.destination = null; });
+    }
     this.input.on('pointerdown', (pointer: Phaser.Input.Pointer) => {
-      this.destination = new Phaser.Math.Vector2(pointer.worldX, pointer.worldY);
+      this.destination = clampToWalkable(pointer.worldX, pointer.worldY);
     });
   }
 
@@ -37,10 +85,8 @@ class DemoScene extends Phaser.Scene {
     }
     if (vector.lengthSq() > 0) {
       vector.normalize().scale(160 * Math.min(delta, 100) / 1000);
-      this.player.setPosition(
-        Phaser.Math.Clamp(this.player.x + vector.x, 15, 785),
-        Phaser.Math.Clamp(this.player.y + vector.y, 15, 465),
-      );
+      const next = clampToWalkable(this.player.x + vector.x, this.player.y + vector.y);
+      this.player.setPosition(next.x, next.y);
     }
   }
 }
@@ -51,8 +97,8 @@ export default function GameCanvas() {
     if (!ref.current) return;
     const game = new Phaser.Game({
       type: Phaser.AUTO,
-      width: 800,
-      height: 480,
+      width: WORLD_WIDTH,
+      height: WORLD_HEIGHT,
       parent: ref.current,
       backgroundColor: '#111e2e',
       scale: { mode: Phaser.Scale.FIT, autoCenter: Phaser.Scale.CENTER_BOTH },
