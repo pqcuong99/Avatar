@@ -1,0 +1,10 @@
+flowchart TD
+  B[Browser Phaser + React] -->|HTTPS/WSS| G[Gateway TLS, Rate Limit]
+  G --> A[Go Account/API]
+  G --> W[Go World/Room Server]
+  W --> T[Go Transaction Service]
+  A --> P[(PostgreSQL Primary)]
+  T --> P
+  W --> R[(Redis coordination)]
+  P -. sync failover .-> S[(PostgreSQL Standby)]
+  P -. PITR offsite .-> O[(Backup separate host)]

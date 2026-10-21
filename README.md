@@ -1,58 +1,68 @@
-# Project Thanh — Avatar Web Game (Monorepo)
+# Avatar — Web Game (Monorepo)
 
-**Bản bàn giao:** 20/10/2026. **Repository:** `https://github.com/pqcuong99/Avatar.git` (người dùng xác nhận repo rỗng tại thời điểm bàn giao).  
-**Trạng thái:** 🛠️ Starter v0.1 + hồ sơ thiết kế; **không phải game MVP đã hoàn tất**.
+Game xã hội 2D trên trình duyệt: Quảng trường nhiều người chơi, chat, bạn bè, nông trại 5 cây, NPC, thời trang, nhiệm vụ ngày và trang Admin.
 
-## Đọc tài liệu trước khi code
+**Trạng thái:** MVP lõi đã chạy end-to-end **trên máy local**; chưa có hạ tầng Beta. Bảng nghiệm thu PASS/PARTIAL/BLOCKED và các điểm chờ quyết định: **[docs/IMPLEMENTATION_STATUS.md](docs/IMPLEMENTATION_STATUS.md)**.
 
-- **[Hướng dẫn bộ hồ sơ](docs/00_INDEX.md)** — bắt đầu tại đây.
-- **[Đặc tả MVP](docs/02_PRODUCT_SPEC_MVP.md)** — chức năng & giới hạn.
-- **[Sổ quyết định P0-001–P0-183](docs/01_DECISION_REGISTER.md)** — luật đã chốt và quyết định thay thế.
-- **[Kiến trúc](docs/03_ARCHITECTURE.md)** — Phaser/React + Go + PostgreSQL/Redis.
-- **[Mô hình dữ liệu đề xuất](docs/04_DATA_MODEL_DRAFT.md)**, **[API đề xuất](docs/05_API_EVENTS_DRAFT.md)**.
-- **[Kiểm thử và điều kiện Beta](docs/06_ACCEPTANCE_QA.md)**.
-- **[Roadmap lập trình](docs/07_ROADMAP.md)**, **[Git/deploy](docs/08_GIT_DEPLOYMENT.md)**, **[Các điểm còn thiếu](docs/09_OPEN_ISSUES.md)**.
-- **[Nguồn gốc dữ liệu](docs/10_SOURCE_MAP.md)** và GDD 17 phân hệ trong `docs/archive/`.
+## Tài liệu
 
-## Công nghệ đã chốt
+- **Đặc tả gốc cho lần hiện thực này:** [docs/ai-handoff-v2/MASTER_SPEC_ALL_IN_ONE.md](docs/ai-handoff-v2/MASTER_SPEC_ALL_IN_ONE.md).
+- Hồ sơ thiết kế: [docs/00_INDEX.md](docs/00_INDEX.md), [sổ quyết định P0](docs/01_DECISION_REGISTER.md), [kiến trúc](docs/03_ARCHITECTURE.md), [QA](docs/06_ACCEPTANCE_QA.md), [Git/deploy](docs/08_GIT_DEPLOYMENT.md).
+- Database: [database/migrations/README.md](database/migrations/README.md) · Giao thức/bản đồ dùng chung: [shared/README.md](shared/README.md).
+- Vận hành: [reset cuối Closed Beta](deploy/RUNBOOK_CLOSED_BETA_RESET.md), [cảnh báo VPS 2012 R2](deploy/README_VPS_WIN2012.md), biến môi trường: [.env.example](.env.example).
 
-Client `Phaser + React + TypeScript`, Game Server `Go`, Transaction Service `Go`, PostgreSQL, Redis, WSS JSON+binary, bản đồ Tiled. Monorepo 1 Repository, code trên máy cá nhân → Git → deploy qua script đến môi trường **tương thích**.
-
-## Toolchain và CI
-
-Go **1.27**, Node.js **24 LTS**, image runtime Alpine **3.24** (đều còn được hỗ trợ tại 20/10/2026). Thư viện Client được khóa bằng `client/package-lock.json` (cài bằng `npm ci`). CI GitHub Actions tại `.github/workflows/ci.yml` chạy `go vet` + `go test` cho từng Go module, build Client và build Docker image trên mỗi push/PR vào `main`, không dùng secret. Chi tiết, cách nâng phiên bản và cách chạy không cần Docker: [docs/08_GIT_DEPLOYMENT.md](docs/08_GIT_DEPLOYMENT.md).
-
-## Thư mục
+## Kiến trúc
 
 ```text
-client/                # Phaser + React demo
- game-server/           # Go health endpoints; multiplayer chưa làm
- transaction-service/   # Go health endpoints; transactions chưa làm
- database/migrations/   # migration placeholder
- deploy/                # compose local + Windows local .bat + lưu ý VPS
- shared/                # giao thức/dữ liệu chung (placeholder)
- .github/workflows/     # CI GitHub Actions
- docs/                  # GDD mới, quyết định, lộ trình, QA, archive
- master-data/           # CSV / JSON export cấu hình & backlog
+Trình duyệt (React + Phaser 3 + TypeScript, Vite)
+   │  HTTPS JSON (/api, /admin/api)   WSS (/ws: JSON + khung nhị phân di chuyển)
+   ▼
+game-server (Go)  — xác thực, phòng/di chuyển server-authoritative, chat, bạn bè, Admin
+   │  HTTP nội bộ + INTERNAL_API_TOKEN
+   ▼
+transaction-service (Go) — nơi DUY NHẤT ghi tài sản: ví, túi, nông trại, NPC, thời trang,
+   │                        nhiệm vụ, đổi tên; idempotency + sổ cái append-only
+   ▼
+PostgreSQL 16 (Redis có trong compose nhưng chưa dùng)
 ```
 
-## Chạy demo trên máy hỗ trợ Docker Linux containers
+| Thư mục | Nội dung |
+|---|---|
+| `client/` | Game (`/`) và trang Admin (`/admin`, tải riêng) |
+| `game-server/` | `cmd/game-server`, `cmd/admin` (tạo Admin), `internal/{api,authn,world,realtime,sim,proto,social,admin,…}` |
+| `transaction-service/` | `cmd/transaction-service`, `cmd/migrate`, `cmd/beta-reset`, `internal/{econ,farm,inventory,names,httpapi,…}` |
+| `database/` | `migrations/` (0001–0009), `seeds/local/` (**DEV SAMPLE**, chỉ khi `THANH_ENV=local`) |
+| `shared/` | `proto/realtime.proto`, `maps/plaza.json`, golden fixtures dùng chung Go/TS |
+| `tools/` | `mapgen/` (sinh bản đồ), `dev/` (admin-e2e, tua nhanh cây trồng — chỉ local) |
+| `deploy/` | `compose.local.yml`, `windows/*.bat`, runbook |
+
+## Chạy trên máy local (Docker Desktop)
 
 ```powershell
 .\deploy\windows\start-local.bat
-# http://localhost:5173 (demo client)
-# http://localhost:8081/healthz
-# http://localhost:8082/healthz
 ```
 
-Dừng bằng `.\deploy\windows\stop-local.bat`. Máy không có Docker: cài Go 1.27+ và Node.js 24 rồi chạy trực tiếp theo [docs/08_GIT_DEPLOYMENT.md](docs/08_GIT_DEPLOYMENT.md) (đặt `GAME_SERVER_URL=http://localhost:8081` cho Client). **Go readiness endpoint cố ý chưa OK**: chưa có WSS, DB auth, ledger hoặc gameplay nhiều người chơi. Xem chi tiết trong `docs/archive/STARTER_README_v0.1.md`.
+- Game: http://localhost:5173 — đăng ký tài khoản, tạo nhân vật, vào Quảng trường.
+- Admin: http://localhost:5173/admin — tạo tài khoản Admin bằng CLI (xem [IMPLEMENTATION_STATUS §5](docs/IMPLEMENTATION_STATUS.md#5-tài-khoản-thử-nghiệm-local)).
+- Health: http://localhost:8081/healthz, http://localhost:8082/healthz.
 
-## Cảnh báo triển khai quan trọng
+`db-migrate` tự áp dụng migration và seed mẫu khi khởi động. Dừng bằng `.\deploy\windows\stop-local.bat`. **Không dùng `docker compose down -v`** (xóa database).
 
-VPS hiện có là **Windows Server 2012 R2 Datacenter**. Không hỗ trợ WSL2 / Docker Linux containers như kế hoạch ban đầu. **Không có BAT tự deploy toàn bộ stack an toàn đã kiểm chứng cho VPS này**. Dùng máy này làm Closed Beta chỉ sau khi lựa chọn runtime/hạ tầng hợp lệ, test và giới hạn rủi ro. **Không mở Open Beta không reset trên hạ tầng một VPS cũ hiện tại** khi chưa đạt tiêu chuẩn P0-161.
+Giá, sản lượng, tỷ lệ sâu, quà nhiệm vụ… trong seed local là **giá trị mẫu** để chơi thử, không phải số đã chốt. Ngoài local, chức năng chưa được Admin cấu hình sẽ trả `FEATURE_NOT_CONFIGURED`.
 
-## Bước tiếp theo
+## Kiểm thử
 
-**M0** push starter và docs lên repo rỗng, chạy local + CI. **M1** làm migrations PostgreSQL + đăng nhập và nhân vật. Sau đó M2 map multiplayer, M3 ledger/inventory, M4 farm/NPC, M5 chat, M6 Admin/fashion/quests, M7 Closed Beta, M8 kiểm thử/chuẩn bị Open Beta. Không có mốc thời gian ảo khi chưa biết tài nguyên triển khai.
+```powershell
+.\deploy\windows\run-tests.bat
+```
 
-**Không commit `.env`, mật khẩu, SSH keys, token hay dữ liệu tài khoản người chơi.**
+Chạy `gofmt`/`go vet`/`go test -race` cho hai dịch vụ Go (test tích hợp tự tạo database riêng `thanh_test_*`, không đụng dữ liệu dev), rồi test/typecheck/build Client. Kiểm tra Admin end-to-end: `node tools/dev/admin-e2e.mjs`. CI GitHub Actions (`.github/workflows/ci.yml`) chạy cùng các bước trên mỗi push/PR.
+
+Toolchain: Go 1.27, Node.js 24, PostgreSQL 16, image Alpine 3.24.
+
+## Cảnh báo triển khai
+
+- VPS hiện có là **Windows Server 2012 R2** — không hỗ trợ Docker Linux/WSL2 và runtime Go mới. **Không mở Beta công khai trên máy này** (GAP-02).
+- Open Beta (không reset) cần HA/PITR, nhiều instance và load test 300 người (O-01..O-03, O-07 đang BLOCKED).
+- Đặt `REQUIRE_SYNC_STANDBY=true` khi có standby đồng bộ; `COOKIE_SECURE=true` và `TOTP_ENCRYPTION_KEY` là bắt buộc ngoài local.
+- **Không commit `.env`, mật khẩu, token, khóa TOTP, `deploy/local-secrets/` hay dữ liệu người chơi.**

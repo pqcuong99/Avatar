@@ -13,3 +13,6 @@ build/
 *.db
 *.sqlite
 coverage/
+
+# Local-only secrets printed by dev tools (admin bootstrap output)
+deploy/local-secrets/

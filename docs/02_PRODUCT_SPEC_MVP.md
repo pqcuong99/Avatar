@@ -1,4 +1,4 @@
-# ĐẶC TẢ SẢN PHẨM MVP — Project Thanh
+# ĐẶC TẢ SẢN PHẨM MVP — Avatar
 
 **Phiên bản:** 1.1 — cập nhật quyết định P0 đến 183 (20/10/2026).  
 **Tài liệu nền 17 phân hệ:** `archive/GDD_baseline_2026-10-19.md`.  

@@ -1,12 +1,14 @@
 {
-  "name": "project-thanh-client",
+  "name": "avatar-client",
   "private": true,
   "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "tsc --noEmit && vite build",
-    "preview": "vite preview --host 0.0.0.0"
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node --test \"src/**/*.test.ts\"",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "phaser": "3.85.2",
@@ -14,6 +16,7 @@
     "react-dom": "18.3.1"
   },
   "devDependencies": {
+    "@types/node": "24.19.2",
     "@types/react": "18.3.12",
     "@types/react-dom": "18.3.1",
     "@vitejs/plugin-react": "4.3.2",

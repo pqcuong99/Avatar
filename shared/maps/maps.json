@@ -1,0 +1,11 @@
+{
+  "note": "Map registry. Public maps are auto-split into rooms (P0-134). DEV SAMPLE until the MVP map list is decided (GAP-19).",
+  "default_map": "plaza",
+  "maps": [
+    {
+      "map_id": "plaza",
+      "file": "plaza.json",
+      "public": true
+    }
+  ]
+}

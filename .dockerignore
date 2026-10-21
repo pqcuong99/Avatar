@@ -1,0 +1,9 @@
+# Build context is the repository root (services share database/ and shared/).
+**/node_modules
+**/dist
+.git
+.github
+docs
+**/*.log
+**/.env
+**/.env.*

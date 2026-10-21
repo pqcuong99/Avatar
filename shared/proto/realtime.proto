@@ -1,0 +1,53 @@
+// Avatar realtime binary protocol, version 1 (P0-166: binary for
+// movement/state, JSON for low-frequency events).
+//
+// Both sides encode these messages with the Protocol Buffers wire format
+// without generated code: Go uses google.golang.org/protobuf/encoding/protowire,
+// the client uses a small hand-written codec (client/src/game/net/proto.ts).
+// shared/fixtures/proto_frames.json holds golden encodings that both test
+// suites check, so the two codecs cannot drift apart.
+//
+// Units: positions are integers in 1/100 pixel. Direction vectors are scaled
+// by 1000 and clamped to length <= 1000 by the shared rule in
+// shared/fixtures/README.md. Tick rate and speed are server config sent in
+// the JSON `hello` message ([CẦN TEST], GAP-15), never hard-coded here.
+syntax = "proto3";
+
+package avatar.realtime.v1;
+
+// Client -> Server (binary WebSocket frame).
+message ClientFrame {
+  oneof body {
+    MoveInput move = 1;
+  }
+}
+
+// One fixed-length movement step requested by the client. The server applies
+// at most one step per tick on average, validates collision with its own copy
+// of the Tiled map and never accepts a position from the client.
+message MoveInput {
+  uint32 seq = 1; // strictly increasing per connection
+  sint32 dx = 2;  // direction x * 1000
+  sint32 dy = 3;  // direction y * 1000
+}
+
+// Server -> Client (binary WebSocket frame).
+message ServerFrame {
+  oneof body {
+    WorldSnapshot snapshot = 1;
+  }
+}
+
+message WorldSnapshot {
+  uint32 server_tick = 1;
+  uint32 ack_seq = 2; // last MoveInput.seq of the receiver applied by the server
+  repeated EntityState entities = 3;
+}
+
+message EntityState {
+  uint32 entity_id = 1;
+  sint32 x = 2;
+  sint32 y = 3;
+  uint32 dir = 4;    // 0=S 1=SW 2=W 3=NW 4=N 5=NE 6=E 7=SE
+  bool moving = 5;
+}

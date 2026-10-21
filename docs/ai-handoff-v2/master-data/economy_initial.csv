@@ -1,0 +1,17 @@
+﻿key,value,unit,status,reference
+initial_xu,5000,Xu,CONFIRMED,P0-030
+initial_diamond,0,Kim Cương,CONFIRMED,P0-031
+xu_wallet_cap_initial,999999999,Xu,CONFIRMED,P0-035
+inventory_initial_slots,10,ô,CONFIRMED,GDD cũ + P0 context
+inventory_slots_per_upgrade,5,ô,CONFIRMED,GDD cũ + P0 context
+farm_initial_plots,6,ô,CONFIRMED,P0-068
+farm_plots_per_upgrade,1,ô,CONFIRMED,P0-070
+farm_item_max_stack,999,vật phẩm/ô,CONFIRMED,GDD cũ + P0 context
+fashion_item_stack,1,vật phẩm/ô,CONFIRMED,GDD cũ + P0 context
+worm_stack,999,con/ô,CONFIRMED,P0-104
+disconnect_grace,30,giây,CONFIRMED,"P0-008,136"
+open_beta_ccu_test_target,300,người đồng thời,CONFIRMED,P0-162
+base_vnd_per_diamond,1000,VND/KC,CONFIRMED_BUT_POST_MVP,"P0-041,154"
+diamond_cap,,KC,ADMIN_TODO,P0-033
+inventory_upgrade_price,,Xu/KC,ADMIN_TODO,Legacy/P0
+farm_plot_upgrade_price,,Xu/KC,ADMIN_TODO,P0-069

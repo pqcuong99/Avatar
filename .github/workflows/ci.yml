@@ -25,9 +25,23 @@ jobs:
     defaults:
       run:
         working-directory: ${{ matrix.module }}
+    services:
+      # Integration tests create and drop their own thanh_test_* databases here.
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: ci
+          POSTGRES_PASSWORD: ci
+          POSTGRES_DB: ci
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd "pg_isready -U ci -d ci"
+          --health-interval 5s --health-timeout 5s --health-retries 10
     env:
       # Fail instead of silently downloading another toolchain if go.mod outgrows CI.
       GOTOOLCHAIN: local
+      GOWORK: 'off'
+      TEST_DATABASE_URL: postgres://ci:ci@localhost:5432/ci?sslmode=disable
     steps:
       - uses: actions/checkout@v7
         with:
@@ -37,14 +51,14 @@ jobs:
           # Keep in sync with go.mod/go.work and the golang image in the Dockerfiles.
           go-version: '1.27.x'
           check-latest: true
-          # No third-party modules (no go.sum) yet, so there is nothing to cache.
-          cache: false
+          cache-dependency-path: ${{ matrix.module }}/go.sum
       - run: go version
+      - run: test -z "$(gofmt -l .)" || (gofmt -l . && exit 1)
       - run: go vet ./...
-      - run: go test ./...
+      - run: go test -race -count=1 ./...
 
   client:
-    name: Client (type-check + build)
+    name: Client (tests + type-check + build)
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -60,7 +74,21 @@ jobs:
           cache: npm
           cache-dependency-path: client/package-lock.json
       - run: npm ci --no-audit --no-fund
+      - run: npm test
       - run: npm run build
+
+  map:
+    name: Shared map is reproducible
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24.x'
+      - run: node tools/mapgen/generate-plaza.mjs
+      - run: git diff --exit-code shared/maps
 
   docker:
     name: Docker images (build only)

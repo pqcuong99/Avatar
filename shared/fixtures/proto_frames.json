@@ -1,0 +1,51 @@
+{
+  "client": [
+    {
+      "seq": 1,
+      "dx": 707,
+      "dy": -707,
+      "hex": "0a08080110860b18850b"
+    },
+    {
+      "seq": 4294967295,
+      "dx": -1000,
+      "dy": 0,
+      "hex": "0a0908ffffffff0f10cf0f"
+    },
+    {
+      "seq": 2,
+      "dx": 0,
+      "dy": 0,
+      "hex": "0a020802"
+    }
+  ],
+  "server": [
+    {
+      "server_tick": 12345,
+      "ack_seq": 77,
+      "entities": [
+        {
+          "entity_id": 1,
+          "x": 75200,
+          "y": 60800,
+          "dir": 4,
+          "moving": true
+        },
+        {
+          "entity_id": 2,
+          "x": -5,
+          "y": 0,
+          "dir": 0,
+          "moving": false
+        }
+      ],
+      "hex": "0a1b08b960104d1a0e0801108097091880b607200428011a0408021009"
+    },
+    {
+      "server_tick": 1,
+      "ack_seq": 0,
+      "entities": null,
+      "hex": "0a020801"
+    }
+  ]
+}
