@@ -1,0 +1,5 @@
+﻿quest_id,description_vi,event_type,target_qty,reward_type,reward_qty,reset_policy,release,status
+,,plant_crop,,,,,MVP,CONTENT_TODO
+,,harvest_crop,,,,,MVP,CONTENT_TODO
+,,sell_crop_to_npc,,,,,MVP,CONTENT_TODO
+,,public_chat_action,,,,,MVP,CONTENT_TODO

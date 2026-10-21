@@ -1,31 +1,72 @@
-# LOCAL DEVELOPMENT ONLY. Do not publish this Compose file directly on the internet.
+# LOCAL DEVELOPMENT ONLY. Do not publish this Compose file directly on the internet:
+# the passwords and the internal token below are well-known development values.
+#
+# Start:  deploy\windows\start-local.bat   (never `docker compose down -v`: -v deletes the database)
+x-dev-db: &dev-db
+  DATABASE_URL: postgres://thanh_dev:DEV_ONLY_change_me_before_any_public_deployment@postgres:5432/thanh_dev?sslmode=disable
+x-dev-token: &dev-token
+  INTERNAL_API_TOKEN: DEV_ONLY_internal_token_change_me
+
 services:
   web:
     build:
-      context: ../client
-      dockerfile: Dockerfile.local
+      context: ..
+      dockerfile: client/Dockerfile.local
+    environment:
+      GAME_SERVER_URL: http://game-server:8081
     ports:
       - '127.0.0.1:5173:5173'
     depends_on:
       - game-server
     restart: unless-stopped
 
+  # Applies database/migrations (and the DEV SAMPLE seeds, THANH_ENV=local) once, then exits.
+  db-migrate:
+    build:
+      context: ..
+      dockerfile: transaction-service/Dockerfile
+    command: ['/usr/local/bin/migrate']
+    environment:
+      <<: *dev-db
+      THANH_ENV: local
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: 'no'
+
   game-server:
     build:
-      context: ../game-server
+      context: ..
+      dockerfile: game-server/Dockerfile
     environment:
+      <<: [*dev-db, *dev-token]
       GAME_SERVER_ADDR: ':8081'
+      TRANSACTION_SERVICE_URL: http://transaction-service:8082
+      ALLOWED_ORIGINS: http://localhost:5173,http://127.0.0.1:5173
+      THANH_ENV: local
     ports:
       - '127.0.0.1:8081:8081'
+    depends_on:
+      db-migrate:
+        condition: service_completed_successfully
+      transaction-service:
+        condition: service_started
     restart: unless-stopped
 
   transaction-service:
     build:
-      context: ../transaction-service
+      context: ..
+      dockerfile: transaction-service/Dockerfile
     environment:
+      <<: [*dev-db, *dev-token]
       TRANSACTION_SERVICE_ADDR: ':8082'
+    # Internal API: reachable from the game server only. Exposed on localhost
+    # for /healthz checks during development.
     ports:
       - '127.0.0.1:8082:8082'
+    depends_on:
+      db-migrate:
+        condition: service_completed_successfully
     restart: unless-stopped
 
   postgres:
@@ -45,6 +86,8 @@ services:
       retries: 6
     restart: unless-stopped
 
+  # Not used by the services yet (rate limits and presence are in-process for
+  # a single instance); kept for the multi-instance work (docs/05 §1).
   redis:
     image: redis:7-alpine
     command: ['redis-server', '--appendonly', 'yes']

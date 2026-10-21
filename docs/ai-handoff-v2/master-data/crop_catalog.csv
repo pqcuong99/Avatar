@@ -1,0 +1,11 @@
+﻿crop_id,name_vi,planned_release,reference_seed_price_xu,growth_minutes,base_yield_ADMIN_TODO,npc_sale_price_xu_ADMIN_TODO,pest_probability_ADMIN_TODO,price_status
+carrot,Cà rốt,MVP,100,30,,,,reference_approved_before_launch
+potato,Khoai tây,MVP,250,60,,,,reference_approved_before_launch
+tomato,Cà chua,MVP,500,120,,,,reference_approved_before_launch
+corn,Ngô,MVP,750,180,,,,reference_approved_before_launch
+cabbage,Bắp cải,MVP,1000,240,,,,reference_approved_before_launch
+strawberry,Dâu tây,V1,,,,,,not_set
+pumpkin,Bí ngô,V1,,,,,,not_set
+watermelon,Dưa hấu,V1,,,,,,not_set
+chili,Ớt,V1,,,,,,not_set
+sweet_potato,Khoai lang,V1,,,,,,not_set

@@ -1,0 +1,207 @@
+{
+  "project": "Project Thanh",
+  "version": "AI Handoff v2.0",
+  "date": "2026-10-21",
+  "repo": "https://github.com/pqcuong99/Avatar.git",
+  "purpose": "Specifications for another AI: game, DB, API, WebSocket, QA, deployment; not production software",
+  "source_decision_count": 183,
+  "openapi_draft_paths": 17,
+  "sql_draft_tables": 36,
+  "files": [
+    {
+      "path": "INSTRUCTIONS_FOR_AI.md",
+      "bytes": 2037,
+      "sha256": "27557a4df5f034336e2bcaa54d9d1ab4fae297ac31503117c46f8e9095ab96d9"
+    },
+    {
+      "path": "MASTER_SPEC_ALL_IN_ONE.md",
+      "bytes": 119797,
+      "sha256": "ca4cce0a4406c8385a8388ca46a647794b30e9e01f1313eca69cbe53de6916ed"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5055,
+      "sha256": "11d4472e382feb2865c527f4518ca8a6b7b4946960dff884f92fb31496a3fa62"
+    },
+    {
+      "path": "ai-prompts/00_MASTER_PROMPT_FOR_OTHER_AI.md",
+      "bytes": 4200,
+      "sha256": "74eee54f31d3bd2210a55385dd60e4dc8e782da5c186672596cd32b7dea08f7c"
+    },
+    {
+      "path": "ai-prompts/01_TASK_DATABASE.md",
+      "bytes": 1341,
+      "sha256": "04375f44438bd11e71f4fa9e21bbf9a41c845ce59cb3519536da1807595504b6"
+    },
+    {
+      "path": "ai-prompts/02_TASK_M1_AUTH_CHARACTER.md",
+      "bytes": 1116,
+      "sha256": "26b6d38761f65e34cdc813c212d40d52a34d588e032ae8d48c1660f7d6520aa4"
+    },
+    {
+      "path": "ai-prompts/03_TASK_WORLD_AND_FARM.md",
+      "bytes": 1278,
+      "sha256": "9d6606c371747ed88164c1a680452d396311a841c1e0abc5042be7c71b1cbe1d"
+    },
+    {
+      "path": "ai-prompts/04_TASK_QA_RELEASE.md",
+      "bytes": 1114,
+      "sha256": "4b2bcdad1976f00439f1d81e53d4f2afd4e0a5100cc2e2acf93a0a891122763a"
+    },
+    {
+      "path": "contracts/openapi-draft.yaml",
+      "bytes": 8080,
+      "sha256": "0d62b7f6b97dac020376c1641f2f0d147cd57274e30cafb7cff4188d9aec6e6c"
+    },
+    {
+      "path": "db/draft/0002_domain_PROPOSAL.sql",
+      "bytes": 17309,
+      "sha256": "56afcc7af7ff86cd978fb65d4ea9f65194aa5437514f8268d0a5357c7b4dd556"
+    },
+    {
+      "path": "diagrams/game_architecture.mmd",
+      "bytes": 348,
+      "sha256": "8d4e7534fbb3c78dcc6b6b01964b74d666cd9a9064b32aafccfffd10f04d5564"
+    },
+    {
+      "path": "diagrams/player_flow.mmd",
+      "bytes": 227,
+      "sha256": "3e8cb1dc841af1f0f1b9c21c27b02d460a6d458d96212410c4e440d8a15ef259"
+    },
+    {
+      "path": "docs/00_CONVENTIONS_AND_SOURCES.md",
+      "bytes": 3553,
+      "sha256": "8086acee4d05c5797710560967bc89faeb269de6090a4642017e9c9225b29be9"
+    },
+    {
+      "path": "docs/01_PRODUCT_GDD_MVP.md",
+      "bytes": 6080,
+      "sha256": "60d9d326ed9c9ec5ecd20c960150a309c96901bcbb58413477fcc07341417a75"
+    },
+    {
+      "path": "docs/02_GAMEPLAY_FARM_INVENTORY_ECONOMY.md",
+      "bytes": 10222,
+      "sha256": "cdaca19bc87d07c686732f667ad875ed26767d15f427a2b7873dba43edf966e5"
+    },
+    {
+      "path": "docs/03_SOCIAL_CHAT_CHARACTER_ADMIN.md",
+      "bytes": 8277,
+      "sha256": "74fa412ee3b248ccb052b06cabe4fefc13326e2aa1a65754356143007ca11f68"
+    },
+    {
+      "path": "docs/04_UI_UX_SCREENS.md",
+      "bytes": 6334,
+      "sha256": "85218caa6d885b0fe6686b83364a470b1da3700c671641832ebc88969c5820bd"
+    },
+    {
+      "path": "docs/05_TECHNICAL_ARCHITECTURE.md",
+      "bytes": 6793,
+      "sha256": "84180d1ffb1108d73437839cf387ccb05572f20ca5b0e0b90d20b5510e64a392"
+    },
+    {
+      "path": "docs/06_DATABASE_SPEC.md",
+      "bytes": 10850,
+      "sha256": "439d7ef3d0bf8b5d98d921d99797b7d7d9273b4a6900a4b9ee4ea11e4cec25af"
+    },
+    {
+      "path": "docs/07_HTTP_API_SPEC.md",
+      "bytes": 8395,
+      "sha256": "288b3d61cfeebb9ff27663d35274760bdea77a312be2d74c4a1a86196d42878b"
+    },
+    {
+      "path": "docs/08_WEBSOCKET_PROTOCOL.md",
+      "bytes": 5344,
+      "sha256": "cf2b2ee1057e93faec93a825dcf237ccfea51d9942a5333746b5501dea014fa6"
+    },
+    {
+      "path": "docs/09_SECURITY_OPERATIONS.md",
+      "bytes": 7258,
+      "sha256": "219131f7f36d679c9cd3adae0c86ecda4e18e2c9b7c1ebaad69086965663cdab"
+    },
+    {
+      "path": "docs/10_ACCEPTANCE_TESTS.md",
+      "bytes": 8208,
+      "sha256": "53cb4404afee7aff27a6787c142c3e908019a4c721a095f6aa7df7131c787c5e"
+    },
+    {
+      "path": "docs/11_ROADMAP_AND_BACKLOG.md",
+      "bytes": 4701,
+      "sha256": "02f97de20b32669307b6e6b8ee9b3983e0b55132d9f481ed03fca84cab3c4aa6"
+    },
+    {
+      "path": "docs/12_GAPS_BLOCKERS.md",
+      "bytes": 3971,
+      "sha256": "0925575375f4a3b577352255e92909af56cd48e31114c254dab1348505527f94"
+    },
+    {
+      "path": "docs/13_POST_MVP_REQUIREMENTS.md",
+      "bytes": 6550,
+      "sha256": "35e3311df3a97530c8d35218ada663725ec461302c0d9f6156470a035ac88f88"
+    },
+    {
+      "path": "master-data/crop_catalog.csv",
+      "bytes": 672,
+      "sha256": "0350a7f4ed41c482e8466edd508b6be3c615ffdfe07eee5c449e93bb2656a0c6"
+    },
+    {
+      "path": "master-data/daily_quest_template.csv",
+      "bytes": 257,
+      "sha256": "75a0f01162760bf8c83ed13e5b703832e1ee69276c991ab749142e492a701982"
+    },
+    {
+      "path": "master-data/decisions_P0_001_183.csv",
+      "bytes": 34567,
+      "sha256": "6478b0e59401be8d339643242883e83cf3cf6c6a7a3a27749e97360b2d2dc4f7"
+    },
+    {
+      "path": "master-data/decisions_P0_001_183.json",
+      "bytes": 54165,
+      "sha256": "be25639c1725c967fd45873e6f4adcd64312500aae5b94a9bff81c7af6f591d1"
+    },
+    {
+      "path": "master-data/dev_backlog.csv",
+      "bytes": 2973,
+      "sha256": "05359f279773be93b27474e0ce2bbf913ebb980827d5ebbcbdaa5304f5339a7c"
+    },
+    {
+      "path": "master-data/economy_initial.csv",
+      "bytes": 900,
+      "sha256": "e14b83c7fa7e3d62285dae8d52167bc4968d9b38c699cb7a2477b1b95a92c05d"
+    },
+    {
+      "path": "master-data/npc_catalog_template.csv",
+      "bytes": 206,
+      "sha256": "cd37e03a4b10ef7140fab915ff1c65f83445b61b205f4bdd4b4078e41723a596"
+    },
+    {
+      "path": "reference/0001_auth_ACTUAL.sql",
+      "bytes": 1178,
+      "sha256": "d996048e3c4eb75558f3a0e84f1fcce6c7a68f4dd9e21b692e12a64b1824a01b"
+    },
+    {
+      "path": "reference/DECISIONS_P0_001_183.md",
+      "bytes": 20844,
+      "sha256": "966306466d74ff8ff5cd31916dae8af0bbfcd1054d7d21142de8cbe9591ac676"
+    },
+    {
+      "path": "reference/GDD_BASELINE_17_MODULES.md",
+      "bytes": 53956,
+      "sha256": "62de5b845c137c041941a1fe1fb162dec7b2e5af619bd6f1a648a9e60f0173bf"
+    },
+    {
+      "path": "reference/LEGACY_DESIGN_AUDIT_1198.md",
+      "bytes": 15314,
+      "sha256": "6644c6c31ca57658e430efbce45aea01f1f2b4adcd7b8294e4d44d9b4a6386c6"
+    },
+    {
+      "path": "reference/M1_AUTH_PROTOTYPE_STATUS.md",
+      "bytes": 5019,
+      "sha256": "3ff3917d58246441ae46b257b7d480647589a454518939356ca50be51c75ac04"
+    },
+    {
+      "path": "reference/OPEN_ISSUES_BASELINE.md",
+      "bytes": 4558,
+      "sha256": "a4c36897d6f5a1198f35e82ff364344c6e37e4a54474d967621ea02a6ccb825b"
+    }
+  ]
+}

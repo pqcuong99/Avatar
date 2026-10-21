@@ -1,0 +1,265 @@
+openapi: 3.1.0
+info:
+  title: Project Thanh HTTP API - draft contract
+  version: 0.1.0-draft
+  description: >-
+    Handoff contract, NOT evidence of implementation. Auth M1 routes were
+    prototyped in a patch, other routes are proposed. Read docs/07_HTTP_API_SPEC.md.
+servers:
+  - url: http://localhost:8081/api/v1
+    description: Local development. Never expose without production hardening.
+security:
+  - cookieAuth: []
+tags:
+  - name: auth
+  - name: characters
+  - name: farm
+  - name: inventory
+  - name: npc
+  - name: pending
+  - name: admin
+paths:
+  /auth/register:
+    post:
+      tags: [auth]
+      security: []
+      summary: Create player account (M1 prototyped; validate final policy)
+      operationId: register
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/Credentials' }
+      responses:
+        '201': { description: Account created }
+        '409': { $ref: '#/components/responses/Conflict' }
+  /auth/login:
+    post:
+      tags: [auth]
+      security: []
+      summary: Login; revoke previous session generation
+      operationId: login
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/Credentials' }
+      responses:
+        '200': { description: HttpOnly session cookie returned }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+  /auth/me:
+    get:
+      tags: [auth]
+      operationId: authMe
+      responses:
+        '200': { description: Current account info }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+  /auth/logout:
+    post:
+      tags: [auth]
+      operationId: logout
+      responses:
+        '204': { description: Session revoked }
+  /characters:
+    post:
+      tags: [characters]
+      summary: Create only one character for this account (proposed)
+      operationId: createCharacter
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [display_name]
+              properties:
+                display_name: { type: string, description: '3-16 Unicode grapheme clusters, allowlisted' }
+      responses:
+        '201': { description: Character and starter state transaction committed }
+        '409': { $ref: '#/components/responses/Conflict' }
+  /characters/me:
+    get:
+      tags: [characters]
+      operationId: getCurrentCharacter
+      responses:
+        '200': { description: Own character }
+  /farm:
+    get:
+      tags: [farm]
+      operationId: getOwnFarm
+      responses:
+        '200': { description: Plot + planting state by server timestamps }
+  /farm/plots/{plotNo}/plant:
+    post:
+      tags: [farm]
+      operationId: plantSingle
+      parameters:
+        - $ref: '#/components/parameters/PlotNo'
+        - $ref: '#/components/parameters/IdempotencyKey'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [crop_code]
+              properties:
+                crop_code: { type: string }
+      responses:
+        '200': { description: Seed consumed and planting atomically created }
+        '409': { $ref: '#/components/responses/Conflict' }
+  /farm/plots/{plotNo}/harvest:
+    post:
+      tags: [farm]
+      operationId: harvestSingle
+      parameters:
+        - $ref: '#/components/parameters/PlotNo'
+        - $ref: '#/components/parameters/IdempotencyKey'
+      responses:
+        '200': { description: Whole crop yield into inventory OR pending }
+        '409': { $ref: '#/components/responses/Conflict' }
+  /farm/harvest-all:
+    post:
+      tags: [farm]
+      operationId: harvestAll
+      parameters:
+        - $ref: '#/components/parameters/IdempotencyKey'
+      responses:
+        '200': { description: Process mature plots in ID order; overflow to pending }
+  /inventory:
+    get:
+      tags: [inventory]
+      operationId: inventory
+      responses:
+        '200': { description: Current slots and cap }
+  /pending/crops:
+    get:
+      tags: [pending]
+      operationId: getPendingCrops
+      responses:
+        '200': { description: One merged row per crop, ordered FIFO }
+  /pending/crops/claim-all:
+    post:
+      tags: [pending]
+      operationId: claimAllCrops
+      parameters:
+        - $ref: '#/components/parameters/IdempotencyKey'
+      responses:
+        '200': { description: FIFO claim with stop rules, no loss }
+  /npc/{npcCode}/offers:
+    get:
+      tags: [npc]
+      operationId: getNpcOffers
+      parameters:
+        - name: npcCode
+          in: path
+          required: true
+          schema: {type: string}
+      responses:
+        '200': {description: Published offers and config version}
+  /npc/{npcCode}/buy:
+    post:
+      tags: [npc]
+      operationId: buyFromNpc
+      parameters:
+        - name: npcCode
+          in: path
+          required: true
+          schema: {type: string}
+        - $ref: '#/components/parameters/IdempotencyKey'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [offer_id, quantity]
+              properties:
+                offer_id: {type: string, format: uuid}
+                quantity: {type: integer, minimum: 1}
+      responses:
+        '200': {description: Wallet + item + ledger all committed}
+        '409': { $ref: '#/components/responses/Conflict' }
+  /admin/asset-adjustments:
+    post:
+      tags: [admin]
+      summary: Propose manual asset adjustment; requires Admin RBAC + TOTP
+      operationId: proposeAdjustment
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/AdjustmentProposal' }
+      responses:
+        '201': {description: Proposal pending independent approval}
+        '403': {description: Insufficient role or TOTP}
+  /admin/asset-adjustments/{adjustmentId}/approve:
+    post:
+      tags: [admin]
+      summary: Approver MUST differ from proposer
+      operationId: approveAdjustment
+      parameters:
+        - name: adjustmentId
+          in: path
+          required: true
+          schema: {type: string, format: uuid}
+        - $ref: '#/components/parameters/IdempotencyKey'
+      responses:
+        '200': {description: Adjustment committed with ledger}
+        '403': {description: Self approval or insufficient permission}
+components:
+  securitySchemes:
+    cookieAuth:
+      type: apiKey
+      in: cookie
+      name: thanh_session
+  parameters:
+    PlotNo:
+      name: plotNo
+      in: path
+      required: true
+      schema: {type: integer, minimum: 1}
+    IdempotencyKey:
+      name: Idempotency-Key
+      in: header
+      required: true
+      schema: {type: string, minLength: 8, maxLength: 128}
+  schemas:
+    Credentials:
+      type: object
+      required: [username, password]
+      properties:
+        username: {type: string}
+        password: {type: string, format: password}
+    AdjustmentProposal:
+      type: object
+      required: [target_character_id, asset_kind, delta, reason]
+      properties:
+        target_character_id: {type: string, format: uuid}
+        asset_kind: {type: string, enum: [XU, DIAMOND, ITEM]}
+        asset_ref: {type: string}
+        delta: {type: integer}
+        reason: {type: string, minLength: 5}
+    ApiError:
+      type: object
+      required: [ok, error]
+      properties:
+        ok: {type: boolean, const: false}
+        error:
+          type: object
+          required: [code, message]
+          properties:
+            code: {type: string}
+            message: {type: string}
+            retryable: {type: boolean}
+  responses:
+    Conflict:
+      description: Conflict/validation error
+      content:
+        application/json:
+          schema: { $ref: '#/components/schemas/ApiError' }
+    Unauthorized:
+      description: Login expired or invalid
+      content:
+        application/json:
+          schema: { $ref: '#/components/schemas/ApiError' }
